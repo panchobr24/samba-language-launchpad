@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'pt';
@@ -13,23 +12,23 @@ const translations = {
   en: {
     // Header
     'header.title': 'Brazilian Day Vancouver 2025',
-    'header.subtitle': 'The Ultimate Brazilian Celebration of the Year — Right Here in Vancouver!',
-    'header.date': 'August 29–30, 2025',
+    'header.subtitle': 'The Ultimate Brazilian Celebration of the Year Right Here in Vancouver!',
+    'header.date': 'August 29 30, 2025',
     'header.location': 'Plaza of Nations Parking Lot',
     'header.cta': 'Get Your Tickets Now',
     
     // About
     'about.title': 'What is Brazilian Day?',
-    'about.description': 'Brazilian Day Vancouver is the biggest celebration of Brazilian culture in Canada — a vibrant two-day festival full of music, food, dance, and joy! Whether you\'re Brazilian or just love the energy of our culture, this is the event of the year you don\'t want to miss.',
+    'about.description': 'Brazilian Day Vancouver is the biggest celebration of Brazilian culture in Canada, a vibrant two day festival full of music, food, dance, and joy! Whether you are Brazilian or just love the energy of our culture, this is the event of the year you do not want to miss.',
     
     // Highlights
     'highlights.title': 'Event Highlights',
     'highlights.music': 'Live Music & Performances',
     'highlights.music.desc': 'Feel the rhythm with top Brazilian artists, "samba" shows, drumming groups, and "capoeira" demonstrations.',
-    'highlights.tchan': 'Special Guest – "É O TCHAN!"',
-    'highlights.tchan.desc': 'Friday, August 29 – LIVE performance by Brazil\'s iconic "axé" group "É o Tchan!" Get ready to dance the night away with unforgettable hits and electrifying energy.',
+    'highlights.tchan': 'Special Guest "É O TCHAN!"',
+    'highlights.tchan.desc': 'Friday, August 29, LIVE performance by Brazil\'s iconic "axé" group "É o Tchan!" Get ready to dance the night away with unforgettable hits and electrifying energy.',
     'highlights.food': 'Brazilian Food & Drinks',
-    'highlights.food.desc': 'Savor authentic Brazilian cuisine — from "feijoada" and "pão de queijo" to "caipirinhas" and "brigadeiros".',
+    'highlights.food.desc': 'Savor authentic Brazilian cuisine from "feijoada" and "pão de queijo" to "caipirinhas" and "brigadeiros".',
     'highlights.culture': 'Cultural Experiences',
     'highlights.culture.desc': 'Enjoy immersive areas showcasing Brazilian art, fashion, games, and regional traditions.',
     'highlights.family': 'Family-Friendly Activities',
@@ -39,23 +38,23 @@ const translations = {
     
     // Schedule
     'schedule.title': 'Event Schedule',
-    'schedule.friday': 'Friday, August 29 – Sunset "Samba"',
-    'schedule.friday.time': '6 PM – 10 PM',
+    'schedule.friday': 'Friday, August 29, Sunset "Samba"',
+    'schedule.friday.time': '6 PM to 10 PM',
     'schedule.friday.dj': 'Live DJs',
     'schedule.friday.food': 'Street Food',
     'schedule.friday.vibes': 'Night Vibes',
-    'schedule.friday.show': 'Main Show: "É o Tchan" – 8 PM',
-    'schedule.saturday': 'Saturday, August 30 – Full Festival Day',
-    'schedule.saturday.time': '10 AM – 10 PM',
+    'schedule.friday.show': 'Main Show: "É o Tchan" at 8 PM',
+    'schedule.saturday': 'Saturday, August 30, Full Festival Day',
+    'schedule.saturday.time': '10 AM to 10 PM',
     'schedule.saturday.music': 'Music & Dance All Day',
-    'schedule.saturday.pavilions': 'Brazilian Experiences Pavilion - A full day of cultural immersion — experiences and attractions to be announced soon!',
+    'schedule.saturday.pavilions': 'Brazilian Experiences Pavilion. A full day of cultural immersion, experiences and attractions to be announced soon!',
     'schedule.saturday.kids': 'Kids\' Activities, Food, Marketplace & More!',
-    'schedule.tickets': 'Tickets Required – Limited Availability! Grab yours now and don\'t miss out.',
+    'schedule.tickets': 'Tickets Required. Limited Availability! Grab yours now and do not miss out.',
     
     // Participate
     'participate.title': 'Be a Part of It',
     'participate.sponsor': 'Become a Sponsor',
-    'participate.sponsor.desc': 'Showcase your brand to thousands of engaged festival-goers.',
+    'participate.sponsor.desc': 'Showcase your brand to thousands of engaged festival goers.',
     'participate.vendor': 'Be a Vendor',
     'participate.vendor.desc': 'Apply to sell food, crafts, or promote your business.',
     'participate.volunteer': 'Volunteer',
@@ -74,23 +73,23 @@ const translations = {
   pt: {
     // Header
     'header.title': 'Brazilian Day Vancouver 2025',
-    'header.subtitle': 'A Maior Celebração Brasileira do Ano — Bem Aqui em Vancouver!',
-    'header.date': '29–30 de Agosto, 2025',
+    'header.subtitle': 'A Maior Celebracao Brasileira do Ano Bem Aqui em Vancouver!',
+    'header.date': '29 30 de Agosto, 2025',
     'header.location': 'Estacionamento Plaza of Nations',
     'header.cta': 'Compre Seus Ingressos Agora',
     
     // About
     'about.title': 'O que é o Brazilian Day?',
-    'about.description': 'Brazilian Day Vancouver é a maior celebração da cultura brasileira no Canadá — um festival vibrante de dois dias cheio de música, comida, dança e alegria! Seja você brasileiro ou apenas ame a energia da nossa cultura, este é o evento do ano que você não pode perder.',
+    'about.description': 'Brazilian Day Vancouver e a maior celebracao da cultura brasileira no Canada, um festival vibrante de dois dias cheio de musica, comida, danca e alegria! Seja voce brasileiro ou apenas ame a energia da nossa cultura, este e o evento do ano que voce nao pode perder.',
     
     // Highlights
     'highlights.title': 'Destaques do Evento',
     'highlights.music': 'Música ao Vivo & Apresentações',
     'highlights.music.desc': 'Sinta o ritmo com os melhores artistas brasileiros, shows de "samba", grupos de percussão e demonstrações de "capoeira".',
-    'highlights.tchan': 'Atração Especial – "É O TCHAN!"',
-    'highlights.tchan.desc': 'Sexta-feira, 29 de Agosto – Apresentação AO VIVO do icônico grupo de "axé" brasileiro "É o Tchan!" Prepare-se para dançar a noite toda com sucessos inesquecíveis e energia eletrizante.',
+    'highlights.tchan': 'Atracao Especial "É O TCHAN!"',
+    'highlights.tchan.desc': 'Sexta feira, 29 de Agosto, Apresentacao AO VIVO do iconico grupo de "axe" brasileiro "É o Tchan!" Prepare se para dancar a noite toda com sucessos inesqueciveis e energia eletrizante.',
     'highlights.food': 'Comida e Bebidas Brasileiras',
-    'highlights.food.desc': 'Saboreie a autêntica culinária brasileira — desde "feijoada" e "pão de queijo" até "caipirinhas" e "brigadeiros".',
+    'highlights.food.desc': 'Saboreie a autentica culinaria brasileira desde "feijoada" e "pao de queijo" ate "caipirinhas" e "brigadeiros".',
     'highlights.culture': 'Experiências Culturais',
     'highlights.culture.desc': 'Aproveite áreas imersivas que mostram arte brasileira, moda, jogos e tradições regionais.',
     'highlights.family': 'Atividades para Toda a Família',
@@ -100,18 +99,18 @@ const translations = {
     
     // Schedule
     'schedule.title': 'Programação do Evento',
-    'schedule.friday': 'Sexta-feira, 29 de Agosto – "Samba" do Pôr do Sol',
-    'schedule.friday.time': '18h – 22h',
+    'schedule.friday': 'Sexta feira, 29 de Agosto, "Samba" do Por do Sol',
+    'schedule.friday.time': '18h ate 22h',
     'schedule.friday.dj': 'DJs ao Vivo',
     'schedule.friday.food': 'Comida de Rua',
     'schedule.friday.vibes': 'Clima Noturno',
-    'schedule.friday.show': 'Show Principal: "É o Tchan" – 20h',
-    'schedule.saturday': 'Sábado, 30 de Agosto – Dia Completo do Festival',
-    'schedule.saturday.time': '10h – 22h',
+    'schedule.friday.show': 'Show Principal: "É o Tchan" as 20h',
+    'schedule.saturday': 'Sabado, 30 de Agosto, Dia Completo do Festival',
+    'schedule.saturday.time': '10h ate 22h',
     'schedule.saturday.music': 'Música e Dança o Dia Todo',
-    'schedule.saturday.pavilions': 'Pavilhão de Experiências Brasileiras - Um dia completo de imersão cultural — experiências e atrações a serem anunciadas em breve!',
+    'schedule.saturday.pavilions': 'Pavilhao de Experiencias Brasileiras. Um dia completo de imersao cultural, experiencias e atracoes a serem anunciadas em breve!',
     'schedule.saturday.kids': 'Atividades Kids, Comida, Mercado e Muito Mais!',
-    'schedule.tickets': 'Ingressos Obrigatórios – Disponibilidade Limitada! Garanta os seus agora e não perca.',
+    'schedule.tickets': 'Ingressos Obrigatorios. Disponibilidade Limitada! Garanta os seus agora e nao perca.',
     
     // Participate
     'participate.title': 'Faça Parte',
