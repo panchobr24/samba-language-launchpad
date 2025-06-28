@@ -57,7 +57,7 @@ const ParticipateSection = () => {
                   </p>
                   <Button 
                     variant="outline" 
-                    className="border-white text-white hover:bg-white hover:text-blue-900"
+                    className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-blue-900 font-semibold transition-all duration-200"
                   >
                     Learn More
                   </Button>
