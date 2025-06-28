@@ -8,6 +8,14 @@ All colors MUST be HSL.
 
 @import url('https://fonts.googleapis.com/css2?family=Daft+Brush&display=swap');
 
+@font-face {
+  font-family: 'Daft Brush';
+  src: url('/fonts/Daft Brush.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -95,11 +103,11 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  html, body {
-    font-family: 'Daft Brush', sans-serif;
+  html, body, *, *::before, *::after {
+    font-family: 'Daft Brush', sans-serif !important;
   }
   .font-daft {
-    font-family: 'Daft Brush', sans-serif;
+    font-family: 'Daft Brush', sans-serif !important;
   }
 }
 
