@@ -8,69 +8,72 @@ const ScheduleSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section className="py-20 bg-gradient-to-br from-brazilian-yellow/20 to-brazilian-green/20 font-daft">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-            {t('schedule.title')}
+          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md">
+            🗓️ Event Schedule
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           
           {/* Friday */}
-          <Card className="bg-gradient-to-br from-indigo-600 to-purple-700 text-white shadow-2xl">
+          <Card className="bg-gradient-to-br from-brazilian-blue to-brazilian-green text-white shadow-2xl border-2 border-white">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl md:text-3xl font-bold mb-2">
-                {t('schedule.friday')}
+                Friday, August 29 – Sunset "Samba"
               </CardTitle>
-              <div className="flex items-center justify-center gap-2 text-yellow-300">
+              <div className="flex items-center justify-center gap-2 text-brazilian-yellow">
                 <Clock className="w-5 h-5" />
-                <span className="text-xl">{t('schedule.friday.time')}</span>
+                <span className="text-xl font-bold">🕕 6 PM – 10 PM</span>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
-                <Music className="w-6 h-6 text-yellow-300" />
-                <span>{t('schedule.friday.dj')}</span>
+              <div className="flex items-center gap-3 p-3 bg-white/20 rounded-lg">
+                <Music className="w-6 h-6 text-brazilian-yellow" />
+                <span className="font-bold">🎧 Live DJs</span>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
-                <Utensils className="w-6 h-6 text-yellow-300" />
-                <span>{t('schedule.friday.food')}</span>
+              <div className="flex items-center gap-3 p-3 bg-white/20 rounded-lg">
+                <Utensils className="w-6 h-6 text-brazilian-yellow" />
+                <span className="font-bold">🍽️ Street Food</span>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
-                <Users className="w-6 h-6 text-yellow-300" />
-                <span>{t('schedule.friday.vibes')}</span>
+              <div className="flex items-center gap-3 p-3 bg-white/20 rounded-lg">
+                <Users className="w-6 h-6 text-brazilian-yellow" />
+                <span className="font-bold">💃 Night Vibes</span>
               </div>
-              <div className="mt-6 p-4 bg-yellow-400 text-blue-900 rounded-lg font-bold text-center">
-                🔥 {t('schedule.friday.show')}
+              <div className="mt-6 p-4 bg-brazilian-yellow text-brazilian-blue rounded-lg font-bold text-center text-lg">
+                🎤 Main Show: "É o Tchan" – 8 PM
               </div>
             </CardContent>
           </Card>
 
           {/* Saturday */}
-          <Card className="bg-gradient-to-br from-green-600 to-blue-700 text-white shadow-2xl">
+          <Card className="bg-gradient-to-br from-brazilian-green to-brazilian-blue text-white shadow-2xl border-2 border-white">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl md:text-3xl font-bold mb-2">
-                {t('schedule.saturday')}
+                Saturday, August 30 – Full Festival Day
               </CardTitle>
-              <div className="flex items-center justify-center gap-2 text-yellow-300">
+              <div className="flex items-center justify-center gap-2 text-brazilian-yellow">
                 <Clock className="w-5 h-5" />
-                <span className="text-xl">{t('schedule.saturday.time')}</span>
+                <span className="text-xl font-bold">🕙 10 AM – 10 PM</span>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
-                <Music className="w-6 h-6 text-yellow-300" />
-                <span>{t('schedule.saturday.music')}</span>
+              <div className="flex items-center gap-3 p-3 bg-white/20 rounded-lg">
+                <Music className="w-6 h-6 text-brazilian-yellow" />
+                <span className="font-bold">🎶 Music & Dance All Day</span>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
-                <Users className="w-6 h-6 text-yellow-300" />
-                <span>{t('schedule.saturday.pavilions')}</span>
+              <div className="flex items-center gap-3 p-3 bg-white/20 rounded-lg">
+                <Users className="w-6 h-6 text-brazilian-yellow" />
+                <span className="font-bold">🎭 Brazilian Experiences Pavilion</span>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/10 rounded-lg">
-                <Utensils className="w-6 h-6 text-yellow-300" />
-                <span>{t('schedule.saturday.kids')}</span>
+              <div className="p-3 bg-white/20 rounded-lg">
+                <p className="font-bold text-sm">A full day of cultural immersion — experiences and attractions to be announced soon!</p>
+              </div>
+              <div className="flex items-center gap-3 p-3 bg-white/20 rounded-lg">
+                <Utensils className="w-6 h-6 text-brazilian-yellow" />
+                <span className="font-bold">🧒 Kids' Activities, Food, Marketplace & More!</span>
               </div>
             </CardContent>
           </Card>
@@ -78,8 +81,8 @@ const ScheduleSection = () => {
 
         {/* Tickets Required Message */}
         <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-red-500 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg inline-block shadow-xl">
-            🎟️ {t('schedule.tickets')}
+          <div className="bg-gradient-to-r from-brazilian-green to-brazilian-blue text-white px-8 py-4 rounded-full font-bold text-lg inline-block shadow-xl border-2 border-white">
+            🎟️ Tickets Required – Limited Availability! Grab yours now and don't miss out.
           </div>
         </div>
       </div>

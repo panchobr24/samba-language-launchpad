@@ -8,54 +8,54 @@ const HeroSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-yellow-400 rounded-full"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-green-400 rounded-full"></div>
-        <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-yellow-300 rounded-full"></div>
-        <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-green-300 rounded-full"></div>
+    <section className="relative min-h-screen bg-gradient-to-br from-brazilian-yellow via-yellow-400 to-brazilian-yellow overflow-hidden font-daft">
+      {/* Background Elements - Brazilian Flag Inspired */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-brazilian-green rounded-full"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-brazilian-blue rounded-full"></div>
+        <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-brazilian-green rounded-full"></div>
+        <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-brazilian-blue rounded-full"></div>
+        {/* Tropical leaves pattern */}
+        <div className="absolute top-1/4 left-0 w-40 h-40 bg-brazilian-green opacity-30 transform rotate-45"></div>
+        <div className="absolute bottom-1/4 right-0 w-40 h-40 bg-brazilian-green opacity-30 transform -rotate-45"></div>
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 pt-20 pb-16 text-center text-white">
+      <div className="relative z-10 container mx-auto px-4 pt-20 pb-16 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Event Logo */}
           <div className="mb-8">
             <img 
               src="/lovable-uploads/78594582-c731-46b2-a322-8d85310ce381.png" 
               alt="Brazilian Day Vancouver 2025 Logo" 
-              className="w-48 h-48 mx-auto mb-8"
+              className="w-48 h-48 mx-auto mb-8 drop-shadow-lg"
             />
           </div>
 
           {/* Logo/Brand */}
           <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent mb-4">
-              BRAZILIAN
+            <h1 className="text-6xl md:text-8xl font-bold text-brazilian-blue drop-shadow-lg mb-4">
+              BRAZILIAN DAY
             </h1>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-2">
-              DAY
-            </h2>
-            <div className="text-2xl md:text-3xl font-light text-yellow-300 mb-8">
+            <div className="text-3xl md:text-4xl font-bold text-brazilian-green mb-8 drop-shadow-md">
               Vancouver 2025
             </div>
           </div>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light mb-12 leading-relaxed">
-            {t('header.subtitle')}
+          <p className="text-xl md:text-2xl font-bold mb-8 text-brazilian-blue leading-relaxed">
+            The Ultimate Brazilian Celebration of the Year — Right Here in Vancouver!
           </p>
 
           {/* Event Details */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 text-lg">
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
-              <Calendar className="w-6 h-6 text-yellow-300" />
-              <span>{t('header.date')}</span>
+            <div className="flex items-center gap-3 bg-brazilian-blue/90 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+              <MapPin className="w-6 h-6 text-brazilian-yellow" />
+              <span className="font-bold">Plaza of Nations Parking Lot</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
-              <MapPin className="w-6 h-6 text-yellow-300" />
-              <span>{t('header.location')}</span>
+            <div className="flex items-center gap-3 bg-brazilian-green/90 backdrop-blur-sm rounded-full px-6 py-3 text-white">
+              <Calendar className="w-6 h-6 text-brazilian-yellow" />
+              <span className="font-bold">August 29–30, 2025</span>
             </div>
           </div>
 
@@ -67,9 +67,9 @@ const HeroSection = () => {
           >
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-blue-900 font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
             >
-              {t('header.cta')}
+              Get Your Tickets Now
             </Button>
           </a>
         </div>

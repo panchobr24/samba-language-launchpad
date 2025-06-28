@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,13 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'daft': ['Daft Brush', 'cursive'],
+			},
 			colors: {
+				'brazilian-yellow': '#FFD700',
+				'brazilian-green': '#228B22',
+				'brazilian-blue': '#0047AB',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
