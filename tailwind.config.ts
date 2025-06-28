@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -21,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'daft': ['Daft Brush', 'cursive'],
+				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
 				'brazilian-yellow': '#FFD700',

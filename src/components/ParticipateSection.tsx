@@ -29,10 +29,10 @@ const ParticipateSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-brazilian-blue/10 to-brazilian-green/10 font-daft">
+    <section className="py-20 bg-gradient-to-br from-brazilian-blue/10 to-brazilian-green/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md">
+          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md font-daft">
             {t('participate.title')}
           </h2>
         </div>
@@ -49,12 +49,12 @@ const ParticipateSection = () => {
                   <div className={`w-16 h-16 mx-auto mb-4 rounded-full ${opportunity.color} flex items-center justify-center`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-brazilian-blue">
+                  <CardTitle className="text-xl font-bold text-brazilian-blue font-daft">
                     {opportunity.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-700 font-bold">
+                  <p className="text-gray-700 font-body">
                     {opportunity.desc}
                   </p>
                 </CardContent>
@@ -72,7 +72,7 @@ const ParticipateSection = () => {
           >
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
+              className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white font-body"
             >
               <MessageCircle className="w-6 h-6 mr-3" />
               Interested? Get in Touch

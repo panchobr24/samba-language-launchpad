@@ -22,27 +22,17 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20 pb-16 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Event Logo */}
+          {/* Event Logo - Much Larger */}
           <div className="mb-8">
             <img 
               src="/lovable-uploads/78594582-c731-46b2-a322-8d85310ce381.png" 
               alt="Brazilian Day Vancouver 2025 Logo" 
-              className="w-48 h-48 mx-auto mb-8 drop-shadow-lg"
+              className="w-80 h-80 md:w-96 md:h-96 mx-auto mb-8 drop-shadow-lg"
             />
           </div>
 
-          {/* Logo/Brand */}
-          <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-bold text-brazilian-blue drop-shadow-lg mb-4">
-              {t('header.title')}
-            </h1>
-            <div className="text-3xl md:text-4xl font-bold text-brazilian-green mb-8 drop-shadow-md">
-              Vancouver 2025
-            </div>
-          </div>
-
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-bold mb-8 text-brazilian-blue leading-relaxed">
+          <p className="text-xl md:text-2xl font-bold mb-8 text-brazilian-blue leading-relaxed font-body">
             {t('header.subtitle')}
           </p>
 
@@ -50,11 +40,11 @@ const HeroSection = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 text-lg">
             <div className="flex items-center gap-3 bg-brazilian-blue/90 backdrop-blur-sm rounded-full px-6 py-3 text-white">
               <MapPin className="w-6 h-6 text-brazilian-yellow" />
-              <span className="font-bold">{t('header.location')}</span>
+              <span className="font-bold font-body">{t('header.location')}</span>
             </div>
             <div className="flex items-center gap-3 bg-brazilian-green/90 backdrop-blur-sm rounded-full px-6 py-3 text-white">
               <Calendar className="w-6 h-6 text-brazilian-yellow" />
-              <span className="font-bold">{t('header.date')}</span>
+              <span className="font-bold font-body">{t('header.date')}</span>
             </div>
           </div>
 
@@ -66,7 +56,7 @@ const HeroSection = () => {
           >
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
+              className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white font-body"
             >
               {t('header.cta')}
             </Button>

@@ -45,10 +45,10 @@ const HighlightsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white font-daft">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md">
+          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md font-daft">
             {t('highlights.title')}
           </h2>
         </div>
@@ -64,10 +64,10 @@ const HighlightsSection = () => {
                 <div className={`w-16 h-16 mx-auto mb-6 rounded-full ${highlight.color} flex items-center justify-center`}>
                   <Icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-brazilian-blue mb-4">
+                <h3 className="text-xl font-bold text-brazilian-blue mb-4 font-daft">
                   {highlight.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed font-bold">
+                <p className="text-gray-700 leading-relaxed font-body">
                   {highlight.desc}
                 </p>
               </div>

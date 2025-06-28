@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import LanguageToggle from '../components/LanguageToggle';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
-import HighlightsSection from '../components/HighlightsSection';
 import ScheduleSection from '../components/ScheduleSection';
+import HighlightsSection from '../components/HighlightsSection';
 import ParticipateSection from '../components/ParticipateSection';
 import LocationSection from '../components/LocationSection';
 import FooterSection from '../components/FooterSection';
@@ -17,8 +16,8 @@ const Index = () => {
         <LanguageToggle />
         <HeroSection />
         <AboutSection />
-        <HighlightsSection />
         <ScheduleSection />
+        <HighlightsSection />
         <ParticipateSection />
         <LocationSection />
         <FooterSection />
