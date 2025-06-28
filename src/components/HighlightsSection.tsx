@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Music, Star, Coffee, Palette, Users, ShoppingBag } from 'lucide-react';
@@ -9,38 +8,38 @@ const HighlightsSection = () => {
   const highlights = [
     {
       icon: Music,
-      title: '🕺 Live Music & Performances',
-      desc: 'Feel the rhythm with top Brazilian artists, "samba" shows, drumming groups, and "capoeira" demonstrations.',
+      title: t('highlights.music'),
+      desc: t('highlights.music.desc'),
       color: 'bg-brazilian-green'
     },
     {
       icon: Star,
-      title: '🌟 Special Guest – "É O TCHAN!"',
-      desc: '🔥 Friday, August 29 – LIVE performance by Brazil\'s iconic "axé" group "É o Tchan!" Get ready to dance the night away with unforgettable hits and electrifying energy.',
+      title: t('highlights.tchan'),
+      desc: t('highlights.tchan.desc'),
       color: 'bg-brazilian-blue'
     },
     {
       icon: Coffee,
-      title: '🍢 Brazilian Food & Drinks',
-      desc: 'Savor authentic Brazilian cuisine — from "feijoada" and "pão de queijo" to "caipirinhas" and "brigadeiros".',
+      title: t('highlights.food'),
+      desc: t('highlights.food.desc'),
       color: 'bg-brazilian-yellow'
     },
     {
       icon: Palette,
-      title: '🎨 Cultural Experiences',
-      desc: 'Enjoy immersive areas showcasing Brazilian art, fashion, games, and regional traditions.',
+      title: t('highlights.culture'),
+      desc: t('highlights.culture.desc'),
       color: 'bg-brazilian-green'
     },
     {
       icon: Users,
-      title: '👨‍👩‍👧‍👦 Family-Friendly Activities',
-      desc: 'Kids\' zone, face painting, games, and crafts make it a perfect day for the whole family.',
+      title: t('highlights.family'),
+      desc: t('highlights.family.desc'),
       color: 'bg-brazilian-blue'
     },
     {
       icon: ShoppingBag,
-      title: '🛍️ Marketplace & Experiences',
-      desc: 'Explore local vendors and Brazilian brands with handmade goods, music, clothing, and more.',
+      title: t('highlights.marketplace'),
+      desc: t('highlights.marketplace.desc'),
       color: 'bg-brazilian-yellow'
     }
   ];
@@ -50,7 +49,7 @@ const HighlightsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md">
-            📅 Event Highlights
+            {t('highlights.title')}
           </h2>
         </div>
 

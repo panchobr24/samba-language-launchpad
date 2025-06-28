@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -11,20 +10,20 @@ const ParticipateSection = () => {
   const opportunities = [
     {
       icon: Handshake,
-      title: '✅ Become a Sponsor',
-      desc: 'Showcase your brand to thousands of engaged festival-goers.',
+      title: t('participate.sponsor'),
+      desc: t('participate.sponsor.desc'),
       color: 'bg-brazilian-yellow'
     },
     {
       icon: Store,
-      title: '✅ Be a Vendor',
-      desc: 'Apply to sell food, crafts, or promote your business.',
+      title: t('participate.vendor'),
+      desc: t('participate.vendor.desc'),
       color: 'bg-brazilian-green'
     },
     {
       icon: Heart,
-      title: '✅ Volunteer',
-      desc: 'Join our team and experience the festival from behind the scenes.',
+      title: t('participate.volunteer'),
+      desc: t('participate.volunteer.desc'),
       color: 'bg-brazilian-blue'
     }
   ];
@@ -34,7 +33,7 @@ const ParticipateSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md">
-            🙌 Be a Part of It
+            {t('participate.title')}
           </h2>
         </div>
 

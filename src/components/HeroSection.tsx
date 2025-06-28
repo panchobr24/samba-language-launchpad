@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -35,7 +34,7 @@ const HeroSection = () => {
           {/* Logo/Brand */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-8xl font-bold text-brazilian-blue drop-shadow-lg mb-4">
-              BRAZILIAN DAY
+              {t('header.title')}
             </h1>
             <div className="text-3xl md:text-4xl font-bold text-brazilian-green mb-8 drop-shadow-md">
               Vancouver 2025
@@ -44,18 +43,18 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl font-bold mb-8 text-brazilian-blue leading-relaxed">
-            The Ultimate Brazilian Celebration of the Year — Right Here in Vancouver!
+            {t('header.subtitle')}
           </p>
 
           {/* Event Details */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 text-lg">
             <div className="flex items-center gap-3 bg-brazilian-blue/90 backdrop-blur-sm rounded-full px-6 py-3 text-white">
               <MapPin className="w-6 h-6 text-brazilian-yellow" />
-              <span className="font-bold">Plaza of Nations Parking Lot</span>
+              <span className="font-bold">{t('header.location')}</span>
             </div>
             <div className="flex items-center gap-3 bg-brazilian-green/90 backdrop-blur-sm rounded-full px-6 py-3 text-white">
               <Calendar className="w-6 h-6 text-brazilian-yellow" />
-              <span className="font-bold">August 29–30, 2025</span>
+              <span className="font-bold">{t('header.date')}</span>
             </div>
           </div>
 
@@ -69,7 +68,7 @@ const HeroSection = () => {
               size="lg" 
               className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-white"
             >
-              Get Your Tickets Now
+              {t('header.cta')}
             </Button>
           </a>
         </div>
