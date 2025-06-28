@@ -43,7 +43,7 @@ const ScheduleSection = () => {
                 <span>{t('schedule.friday.vibes')}</span>
               </div>
               <div className="mt-6 p-4 bg-yellow-400 text-blue-900 rounded-lg font-bold text-center">
-                ⭐ {t('schedule.friday.show')}
+                🔥 {t('schedule.friday.show')}
               </div>
             </CardContent>
           </Card>
@@ -74,6 +74,13 @@ const ScheduleSection = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Tickets Required Message */}
+        <div className="text-center mt-12">
+          <div className="bg-gradient-to-r from-red-500 to-pink-600 text-white px-8 py-4 rounded-full font-bold text-lg inline-block shadow-xl">
+            🎟️ {t('schedule.tickets')}
+          </div>
         </div>
       </div>
     </section>

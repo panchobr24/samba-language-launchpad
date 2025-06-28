@@ -4,7 +4,6 @@ import { LanguageProvider } from '../contexts/LanguageContext';
 import LanguageToggle from '../components/LanguageToggle';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
-import TicketsSection from '../components/TicketsSection';
 import HighlightsSection from '../components/HighlightsSection';
 import ScheduleSection from '../components/ScheduleSection';
 import ParticipateSection from '../components/ParticipateSection';
@@ -18,7 +17,6 @@ const Index = () => {
         <LanguageToggle />
         <HeroSection />
         <AboutSection />
-        <TicketsSection />
         <HighlightsSection />
         <ScheduleSection />
         <ParticipateSection />

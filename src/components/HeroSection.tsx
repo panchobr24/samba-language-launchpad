@@ -20,6 +20,15 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-20 pb-16 text-center text-white">
         <div className="max-w-4xl mx-auto">
+          {/* Event Logo */}
+          <div className="mb-8">
+            <img 
+              src="/lovable-uploads/78594582-c731-46b2-a322-8d85310ce381.png" 
+              alt="Brazilian Day Vancouver 2025 Logo" 
+              className="w-48 h-48 mx-auto mb-8"
+            />
+          </div>
+
           {/* Logo/Brand */}
           <div className="mb-8">
             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent mb-4">
@@ -51,12 +60,18 @@ const HeroSection = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-blue-900 font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+          <a 
+            href="https://picpass.ca/Eventos/BrazilianDay/178?fbclid=PAZXh0bgNhZW0CMTEAAafhS9KDqIMkFqYnCj1d3XuWoAiaVyq0OES3YUAewri0eAjsZGmS8xNfI2zzTQ_aem_Ks1LueTEuq7kyOiMkf4o1Q"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            {t('header.cta')}
-          </Button>
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-blue-900 font-bold text-xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+            >
+              {t('header.cta')}
+            </Button>
+          </a>
         </div>
       </div>
 
