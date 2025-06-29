@@ -93,7 +93,7 @@ const HeroSection = () => {
             <motion.img 
               src="/lovable-uploads/logo_29_30.png" 
               alt="Brazilian Day Vancouver 2025 Logo" 
-              className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 md:w-96 md:h-96 mx-auto mb-8 drop-shadow-lg"
+              className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 mx-auto mb-8 drop-shadow-lg"
               whileHover={{ 
                 scale: 1.05,
                 rotate: [0, -2, 2, 0],
@@ -158,7 +158,7 @@ const HeroSection = () => {
             >
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-brazilian-blue font-bold text-body-xl sm:text-lg text-2xl sm:px-8 sm:py-4 px-12 py-6 min-h-[44px] rounded-full shadow-2xl border-2 border-white font-body relative overflow-hidden"
+                className="w-full sm:w-auto mx-auto bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-brazilian-blue font-bold text-body-xl sm:text-lg text-2xl px-4 sm:px-8 py-4 sm:py-4 min-h-[44px] rounded-full shadow-2xl border-2 border-white font-body relative overflow-hidden"
               >
                 <span className="relative z-10 font-bold font-body uppercase tracking-wide text-white sm:text-lg text-2xl drop-shadow-md">{t('header.cta')}</span>
               </Button>

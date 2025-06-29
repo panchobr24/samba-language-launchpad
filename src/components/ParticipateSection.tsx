@@ -126,7 +126,7 @@ const ParticipateSection = () => {
           >
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-green-400 via-brazilian-green to-brazilian-blue hover:from-green-500 hover:to-blue-800 text-white font-extrabold text-2xl sm:text-lg sm:px-8 sm:py-4 px-16 py-8 min-h-[44px] rounded-full shadow-3xl border-2 border-white font-body relative overflow-visible transition-all duration-200 focus:ring-4 focus:ring-brazilian-yellow/60"
+              className="w-full sm:w-auto mx-auto bg-gradient-to-r from-green-400 via-brazilian-green to-brazilian-blue hover:from-green-500 hover:to-blue-800 text-white font-extrabold text-2xl sm:text-lg px-4 sm:px-8 py-4 sm:py-4 min-h-[44px] rounded-full shadow-3xl border-2 border-white font-body relative overflow-visible transition-all duration-200 focus:ring-4 focus:ring-brazilian-yellow/60"
             >
               <motion.span
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"

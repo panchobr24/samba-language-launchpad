@@ -37,6 +37,7 @@ const LocationSection = () => {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Samba Language Launchpad Location"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
               />
             </div>
           </div>
