@@ -32,7 +32,7 @@ const ParticipateSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-brazilian-blue/10 to-brazilian-green/10" ref={ref}>
+    <section className="py-20 sm:py-16 bg-gradient-to-br from-brazilian-blue/10 to-brazilian-green/10" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -48,7 +48,7 @@ const ParticipateSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
           {opportunities.map((opportunity, index) => {
             const Icon = opportunity.icon;
             return (
@@ -67,7 +67,7 @@ const ParticipateSection = () => {
                   transition: { duration: 0.3 }
                 }}
               >
-                <Card className="bg-white shadow-lg border-2 border-gray-100 relative overflow-hidden">
+                <Card className="bg-white shadow-lg border-2 border-gray-100 relative overflow-hidden sm:p-6">
                   {/* Shimmer effect */}
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
@@ -126,7 +126,7 @@ const ParticipateSection = () => {
           >
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-green-400 via-brazilian-green to-brazilian-blue hover:from-green-500 hover:to-blue-800 text-white font-extrabold text-2xl px-16 py-8 rounded-full shadow-3xl border-2 border-white font-body relative overflow-visible transition-all duration-200 focus:ring-4 focus:ring-brazilian-yellow/60"
+              className="bg-gradient-to-r from-green-400 via-brazilian-green to-brazilian-blue hover:from-green-500 hover:to-blue-800 text-white font-extrabold text-2xl sm:text-lg sm:px-8 sm:py-4 px-16 py-8 min-h-[44px] rounded-full shadow-3xl border-2 border-white font-body relative overflow-visible transition-all duration-200 focus:ring-4 focus:ring-brazilian-yellow/60"
             >
               <motion.span
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
@@ -136,7 +136,7 @@ const ParticipateSection = () => {
               />
               <span className="absolute -inset-2 rounded-full bg-brazilian-yellow/30 blur-lg opacity-0 group-hover:opacity-80 transition-opacity duration-300 z-0"></span>
               <MessageCircle className="w-7 h-7 mr-4 relative z-10" />
-              <span className="relative z-10">{t('participate.contact')}</span>
+              <span className="relative z-10 sm:text-lg text-2xl">{t('participate.contact')}</span>
             </Button>
           </motion.a>
         </motion.div>

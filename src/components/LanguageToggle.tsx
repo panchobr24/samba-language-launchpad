@@ -7,7 +7,7 @@ const LanguageToggle = () => {
 
   return (
     <motion.div 
-      className="fixed top-4 right-4 z-50 flex gap-2"
+      className="fixed top-4 right-4 z-50 flex gap-2 sm:gap-4"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
@@ -17,10 +17,11 @@ const LanguageToggle = () => {
     >
       <motion.button
         onClick={() => setLanguage('pt')}
-        className={`w-10 h-7 rounded-sm overflow-hidden border-2 ${
+        className={`w-10 h-7 sm:w-12 sm:h-8 rounded-sm overflow-hidden border-2 ${
           language === 'pt' ? 'border-yellow-400 shadow-lg' : 'border-gray-300'
         }`}
         title="Português"
+        aria-label="Português"
         whileHover={{ 
           scale: 1.15,
           y: -2,
@@ -43,10 +44,11 @@ const LanguageToggle = () => {
       </motion.button>
       <motion.button
         onClick={() => setLanguage('en')}
-        className={`w-10 h-7 rounded-sm overflow-hidden border-2 ${
+        className={`w-10 h-7 sm:w-12 sm:h-8 rounded-sm overflow-hidden border-2 ${
           language === 'en' ? 'border-yellow-400 shadow-lg' : 'border-gray-300'
         }`}
         title="English"
+        aria-label="English"
         whileHover={{ 
           scale: 1.15,
           y: -2,

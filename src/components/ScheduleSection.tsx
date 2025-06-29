@@ -42,7 +42,7 @@ const ScheduleSection = () => {
               transition: { duration: 0.3 }
             }}
           >
-            <Card className="bg-gradient-to-br from-brazilian-blue to-brazilian-green text-white shadow-2xl border-2 border-white relative overflow-hidden">
+            <Card className="bg-gradient-to-br from-brazilian-blue to-brazilian-green text-white shadow-2xl border-2 border-white relative overflow-hidden min-h-[44px] sm:p-4">
               {/* Shimmer effect */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
@@ -75,7 +75,7 @@ const ScheduleSection = () => {
                   <img src="/lovable-uploads/eo_tchan.png" alt="É o Tchan" className="h-40 w-40 md:h-56 md:w-56 rounded-full shadow-lg object-cover bg-white/80 p-1 border-2 border-white" />
                 </div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.3, duration: 0.5 }}
@@ -90,7 +90,7 @@ const ScheduleSection = () => {
                   </div>
                 </motion.div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.4, duration: 0.5 }}
@@ -105,7 +105,7 @@ const ScheduleSection = () => {
                   </div>
                 </motion.div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.5, duration: 0.5 }}
@@ -120,7 +120,7 @@ const ScheduleSection = () => {
                   </div>
                 </motion.div>
                 <motion.div 
-                  className="mt-6 p-4 bg-brazilian-yellow text-brazilian-blue rounded-lg font-bold text-center text-xl font-body shadow-md"
+                  className="mt-6 p-4 sm:p-2 bg-brazilian-yellow text-brazilian-blue rounded-lg font-bold text-center text-xl font-body shadow-md min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.6, duration: 0.5 }}
@@ -151,7 +151,7 @@ const ScheduleSection = () => {
               transition: { duration: 0.3 }
             }}
           >
-            <Card className="bg-gradient-to-br from-brazilian-green to-brazilian-blue text-white shadow-2xl border-2 border-white relative overflow-hidden">
+            <Card className="bg-gradient-to-br from-brazilian-green to-brazilian-blue text-white shadow-2xl border-2 border-white relative overflow-hidden min-h-[44px] sm:p-4">
               {/* Shimmer effect */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
@@ -181,7 +181,7 @@ const ScheduleSection = () => {
                   <img src="/lovable-uploads/dia_30.png" alt="Dia 30 Highlight" className="h-40 w-40 md:h-56 md:w-56 rounded-full shadow-lg object-cover bg-white/80 p-1 border-2 border-white" />
                 </div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.5, duration: 0.5 }}
@@ -196,7 +196,7 @@ const ScheduleSection = () => {
                   </div>
                 </motion.div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.55, duration: 0.5 }}
@@ -211,7 +211,7 @@ const ScheduleSection = () => {
                   </div>
                 </motion.div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.6, duration: 0.5 }}
@@ -226,7 +226,7 @@ const ScheduleSection = () => {
                   </div>
                 </motion.div>
                 <motion.div 
-                  className="flex items-center gap-3 p-3 bg-white/30 rounded-lg"
+                  className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
                   initial={{ x: -20, opacity: 0 }}
                   animate={isInView ? { x: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.7, duration: 0.5 }}

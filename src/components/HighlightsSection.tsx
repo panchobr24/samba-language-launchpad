@@ -76,7 +76,7 @@ const HighlightsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white" ref={ref}>
+    <section className="py-20 sm:py-16 bg-gradient-to-br from-gray-50 to-white" ref={ref}>
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -93,7 +93,7 @@ const HighlightsSection = () => {
         </motion.div>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -103,7 +103,7 @@ const HighlightsSection = () => {
             return (
               <motion.div 
                 key={index}
-                className="text-center p-8 rounded-2xl bg-white shadow-lg border-2 border-gray-100 relative overflow-hidden group"
+                className="text-center p-8 sm:p-6 rounded-2xl bg-white shadow-lg border-2 border-gray-100 relative overflow-hidden group"
                 variants={cardVariants}
                 whileHover={{ 
                   y: -10,
