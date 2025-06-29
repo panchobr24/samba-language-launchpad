@@ -20,7 +20,20 @@ export default {
 		extend: {
 			fontFamily: {
 				'daft': ['Daft Brush', 'cursive'],
-				'inter': ['Inter', 'sans-serif'],
+				'nunito': ['Nunito', 'sans-serif'],
+			},
+			fontSize: {
+				// Harmonized font sizes for Nunito to work well with Daft Brush
+				'body-xs': ['0.75rem', { lineHeight: '1.2', letterSpacing: '0.025em' }],
+				'body-sm': ['0.875rem', { lineHeight: '1.4', letterSpacing: '0.025em' }],
+				'body-base': ['1rem', { lineHeight: '1.5', letterSpacing: '0.025em' }],
+				'body-lg': ['1.125rem', { lineHeight: '1.6', letterSpacing: '0.025em' }],
+				'body-xl': ['1.25rem', { lineHeight: '1.6', letterSpacing: '0.025em' }],
+				'body-2xl': ['1.5rem', { lineHeight: '1.5', letterSpacing: '0.025em' }],
+				'body-3xl': ['1.875rem', { lineHeight: '1.4', letterSpacing: '0.025em' }],
+				'body-4xl': ['2.25rem', { lineHeight: '1.3', letterSpacing: '0.025em' }],
+				'body-5xl': ['3rem', { lineHeight: '1.2', letterSpacing: '0.025em' }],
+				'body-6xl': ['3.75rem', { lineHeight: '1.1', letterSpacing: '0.025em' }],
 			},
 			colors: {
 				'brazilian-yellow': '#FFD700',
@@ -91,11 +104,56 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-slow': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.5'
+					}
+				},
+				'bounce-slow': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-5px)'
+					}
+				},
+				'spin-slow': {
+					from: {
+						transform: 'rotate(0deg)'
+					},
+					to: {
+						transform: 'rotate(360deg)'
+					}
+				},
+				'shimmer': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'100%': {
+						transform: 'translateX(100%)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 2s ease-in-out infinite',
+				'bounce-slow': 'bounce-slow 2s ease-in-out infinite',
+				'spin-slow': 'spin-slow 3s linear infinite',
+				'shimmer': 'shimmer 2s ease-in-out infinite'
 			}
 		}
 	},

@@ -12,21 +12,21 @@ const translations = {
   en: {
     // Header
     'header.title': 'Brazilian Day Vancouver 2025',
-    'header.subtitle': 'The Ultimate Brazilian Celebration of the Year Right Here in Vancouver!',
-    'header.date': 'August 29 30, 2025',
+    'header.subtitle': 'The Ultimate Brazilian Celebration of the Year in Vancouver!',
+    'header.date': 'August 29 and 30, 2025',
     'header.location': 'Plaza of Nations Parking Lot',
-    'header.cta': 'Get Your Tickets Now',
+    'header.cta': 'Get Your Tickets Now!',
     
     // About
     'about.title': 'What is Brazilian Day?',
-    'about.description': 'Brazilian Day Vancouver is the biggest celebration of Brazilian culture in Canada, a vibrant two day festival full of music, food, dance, and joy! Whether you are Brazilian or just love the energy of our culture, this is the event of the year you do not want to miss.',
+    'about.description': 'Brazilian Day Vancouver is the biggest celebration of Brazilian culture in Canada, a two day festival full of music, food, dance, and joy! Whether you are Brazilian or just love the energy of our culture, this is the event of the year you do not want to miss.',
     
     // Highlights
     'highlights.title': 'Event Highlights',
     'highlights.music': 'Live Music & Performances',
     'highlights.music.desc': 'Feel the rhythm with top Brazilian artists, "samba" shows, drumming groups, and "capoeira" demonstrations.',
     'highlights.tchan': 'Special Guest "É O TCHAN!"',
-    'highlights.tchan.desc': 'Friday, August 29, LIVE performance by Brazil\'s iconic "axé" group "É o Tchan!" Get ready to dance the night away with unforgettable hits and electrifying energy.',
+    'highlights.tchan.desc': 'Friday, August 29, LIVE performance by Brazil\'s iconic "axé" group É o Tchan!',
     'highlights.food': 'Brazilian Food & Drinks',
     'highlights.food.desc': 'Savor authentic Brazilian cuisine from "feijoada" and "pão de queijo" to "caipirinhas" and "brigadeiros".',
     'highlights.culture': 'Cultural Experiences',
@@ -38,17 +38,24 @@ const translations = {
     
     // Schedule
     'schedule.title': 'Event Schedule',
-    'schedule.friday': 'Friday, August 29, Sunset "Samba"',
+    'schedule.friday': 'Friday, August 29',
     'schedule.friday.time': '6 PM to 10 PM',
     'schedule.friday.dj': 'Live DJs',
+    'schedule.friday.dj.desc': 'Get ready to dance all night with vibrant DJ sets spinning the best of Brazilian funk, axé, sertanejo, and electronic music.',
     'schedule.friday.food': 'Street Food',
+    'schedule.friday.food.desc': 'Authentic flavors straight from the streets of Brazil! Try pastel, coxinha, barbecue, brigadeiro, and much more.',
     'schedule.friday.vibes': 'Night Vibes',
+    'schedule.friday.vibes.desc': 'Lights, rhythm, and tropical energy. The party starts at sunset and goes into the night with lots of excitement and a true Brazilian summer vibe.',
     'schedule.friday.show': 'Main Show: "É o Tchan" at 8 PM',
-    'schedule.saturday': 'Saturday, August 30, Full Festival Day',
+    'schedule.friday.show.desc': 'The group that marked generations takes the stage at 8 PM! Get ready to dance to axé classics with É o Tchan!',
+    'schedule.saturday': 'Saturday, August 30',
     'schedule.saturday.time': '10 AM to 10 PM',
     'schedule.saturday.music': 'Music & Dance All Day',
-    'schedule.saturday.pavilions': 'Brazilian Experiences Pavilion. A full day of cultural immersion, experiences and attractions to be announced soon!',
+    'schedule.saturday.music.desc': 'Live performances by local bands and dance groups throughout the day.',
+    'schedule.saturday.pavilions': 'Cultural immersion',
+    'schedule.saturday.pavilions.desc': 'Explore Brazilian culture with immersive experiences, workshops, and attractions.',
     'schedule.saturday.kids': 'Kids\' Activities, Food, Marketplace & More!',
+    'schedule.saturday.kids.desc': 'Fun activities for kids, delicious food, a vibrant marketplace, and much more!',
     'schedule.tickets': 'Tickets Required. Limited Availability! Grab yours now and do not miss out.',
     
     // Participate
@@ -59,12 +66,15 @@ const translations = {
     'participate.vendor.desc': 'Apply to sell food, crafts, or promote your business.',
     'participate.volunteer': 'Volunteer',
     'participate.volunteer.desc': 'Join our team and experience the festival from behind the scenes.',
-    
+    'participate.contact': 'Interested? Get in Touch',
+
     // Location
     'location.title': 'Location & Getting There',
-    'location.address': 'Plaza of Nations – Parking Lot, Downtown Vancouver',
-    'location.transit': 'Easy access by SkyTrain & buses',
-    'location.parking': 'Paid parking available nearby',
+    'location.address': 'Plaza of Nations, 750 Pacific Blvd, Vancouver, BC V6B 5E7',
+    'location.transit': 'Easy access by SkyTrain',
+    'location.transit.desc': 'The SkyTrain station Stadium–Chinatown is just a few minutes walk from the event.',
+    'location.parking': 'Paid parking available',
+    'location.parking.desc': 'Parking options available nearby.',
     
     // Footer
     'footer.follow': 'Follow Us',
@@ -73,14 +83,14 @@ const translations = {
   pt: {
     // Header
     'header.title': 'Brazilian Day Vancouver 2025',
-    'header.subtitle': 'A Maior Celebracao Brasileira do Ano Bem Aqui em Vancouver!',
-    'header.date': '29 30 de Agosto, 2025',
+    'header.subtitle': 'A Maior Celebração Brasileira do Ano em Vancouver!',
+    'header.date': '29 e 30 de Agosto de 2025',
     'header.location': 'Estacionamento Plaza of Nations',
-    'header.cta': 'Compre Seus Ingressos Agora',
+    'header.cta': 'Garanta já o seu ingresso!',
     
     // About
     'about.title': 'O que é o Brazilian Day?',
-    'about.description': 'Brazilian Day Vancouver e a maior celebracao da cultura brasileira no Canada, um festival vibrante de dois dias cheio de musica, comida, danca e alegria! Seja voce brasileiro ou apenas ame a energia da nossa cultura, este e o evento do ano que voce nao pode perder.',
+    'about.description': 'Brazilian Day Vancouver é a maior celebração da cultura brasileira no Canadá, um festival de dois dias cheio de música, comida, dança e alegria! Seja você brasileiro ou apenas ame a energia da nossa cultura, este é o evento do ano que você não pode perder.',
     
     // Highlights
     'highlights.title': 'Destaques do Evento',
@@ -99,18 +109,27 @@ const translations = {
     
     // Schedule
     'schedule.title': 'Programação do Evento',
-    'schedule.friday': 'Sexta feira, 29 de Agosto, "Samba" do Por do Sol',
-    'schedule.friday.time': '18h ate 22h',
+    'schedule.friday': 'Sexta-feira, 29 de Agosto',
+    'schedule.friday.time': '18h até 22h',
     'schedule.friday.dj': 'DJs ao Vivo',
+    'schedule.friday.dj.desc': 'Prepare-se para dançar a noite inteira com sets de DJs tocando o melhor do funk, axé, sertanejo e eletrônico brasileiro.',
     'schedule.friday.food': 'Comida de Rua',
+    'schedule.friday.food.desc': 'Sabores autênticos direto das ruas do Brasil! Experimente pastel, coxinha, churrasco, brigadeiro e muito mais.',
     'schedule.friday.vibes': 'Clima Noturno',
-    'schedule.friday.show': 'Show Principal: "É o Tchan" as 20h',
-    'schedule.saturday': 'Sabado, 30 de Agosto, Dia Completo do Festival',
-    'schedule.saturday.time': '10h ate 22h',
+    'schedule.friday.vibes.desc': 'Luzes, ritmo e energia tropical. A festa começa no fim da tarde e entra pela noite com muita animação e clima de verão brasileiro.',
+    'schedule.friday.show': 'Atração Principal: É o Tchan',
+    'schedule.friday.show.desc': 'O grupo que marcou gerações sobe ao palco às 20h! Prepare-se para dançar os clássicos do axé com É o Tchan!',
+    'schedule.saturday': 'Sábado, 30 de Agosto',
+    'schedule.saturday.time': '10h até 22h',
     'schedule.saturday.music': 'Música e Dança o Dia Todo',
-    'schedule.saturday.pavilions': 'Pavilhao de Experiencias Brasileiras. Um dia completo de imersao cultural, experiencias e atracoes a serem anunciadas em breve!',
+    'schedule.saturday.music.desc': 'Apresentações ao vivo de bandas locais e grupos de dança durante todo o dia.',
+    'schedule.saturday.vibe': 'Clima ao Ar Livre',
+    'schedule.saturday.vibe.desc': 'Aproveite o festival em um espaço aberto, à beira-mar, com vista para o centro de Vancouver.',
+    'schedule.saturday.pavilions': 'Imersão cultural',
+    'schedule.saturday.pavilions.desc': 'Explore a cultura brasileira com experiências imersivas, oficinas e atrações.',
     'schedule.saturday.kids': 'Atividades Kids, Comida, Mercado e Muito Mais!',
-    'schedule.tickets': 'Ingressos Obrigatorios. Disponibilidade Limitada! Garanta os seus agora e nao perca.',
+    'schedule.saturday.kids.desc': 'Atividades divertidas para crianças, comidas deliciosas, mercado vibrante e muito mais!',
+    'schedule.tickets': 'Ingressos Obrigatórios. Disponibilidade Limitada!',
     
     // Participate
     'participate.title': 'Faça Parte',
@@ -120,15 +139,18 @@ const translations = {
     'participate.vendor.desc': 'Candidate-se para vender comida, artesanato ou promover seu negócio.',
     'participate.volunteer': 'Seja Voluntário',
     'participate.volunteer.desc': 'Junte-se à nossa equipe e experimente o festival por trás das cenas.',
+    'participate.contact': 'Interessado? Entre em Contato',
     
     // Location
     'location.title': 'Localização e Como Chegar',
-    'location.address': 'Plaza of Nations – Estacionamento, Centro de Vancouver',
+    'location.address': 'Plaza of Nations, 750 Pacific Blvd, Vancouver, BC V6B 5E7',
     'location.transit': 'Acesso fácil por SkyTrain e ônibus',
-    'location.parking': 'Estacionamento pago disponível nas proximidades',
+    'location.transit.desc': 'A estação Stadium–Chinatown do SkyTrain fica a poucos minutos a pé do evento.',
+    'location.parking': 'Estacionamento pago disponível',
+    'location.parking.desc': 'Opções de estacionamento disponíveis nas proximidades do evento.',
     
     // Footer
-    'footer.follow': 'Nos Siga',
+    'footer.follow': 'Fique por dentro e nos siga no',
     'footer.instagram': 'Instagram'
   }
 };
@@ -136,7 +158,7 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('pt');
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations[typeof language]] || key;

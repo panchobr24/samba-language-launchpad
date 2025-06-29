@@ -9,7 +9,7 @@ const LocationSection = () => {
     <section className="py-20 bg-white font-daft">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md">
+          <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md font-daft">
             {t('location.title')}
           </h2>
         </div>
@@ -22,7 +22,23 @@ const LocationSection = () => {
                 {t('location.address')}
               </h3>
             </div>
-            <p className="text-xl font-bold text-gray-700">Downtown Vancouver</p>
+            <p className="text-body-xl font-bold text-gray-700">Downtown Vancouver</p>
+          </div>
+
+          {/* Google Maps Embedding */}
+          <div className="mb-12">
+            <div className="w-full h-96 md:h-[450px] rounded-xl overflow-hidden shadow-2xl border-4 border-brazilian-blue/20">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.618418759914!2d-123.11216022401271!3d49.275580771257815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717ccd697eef%3A0xcecefc1a96939530!2s750%20Pacific%20Blvd%2C%20Vancouver%2C%20BC%20V6B%205E7!5e1!3m2!1sen!2sca!4v1751164944867!5m2!1sen!2sca" 
+                width="100%" 
+                height="100%" 
+                style={{border:0}} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Samba Language Launchpad Location"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -32,7 +48,7 @@ const LocationSection = () => {
                 <h4 className="font-bold text-brazilian-blue mb-2 text-lg">
                   {t('location.transit')}
                 </h4>
-                <p className="text-gray-700 font-bold">{t('location.transit')}</p>
+                <p className="text-gray-700 font-bold text-sm italic">{t('location.transit.desc')}</p>
               </div>
             </div>
             
@@ -42,7 +58,7 @@ const LocationSection = () => {
                 <h4 className="font-bold text-brazilian-green mb-2 text-lg">
                   {t('location.parking')}
                 </h4>
-                <p className="text-gray-700 font-bold">{t('location.parking')}</p>
+                <p className="text-gray-700 font-bold text-sm italic">{t('location.parking.desc')}</p>
               </div>
             </div>
           </div>

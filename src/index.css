@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Daft+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,9 +8,6 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Daft+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Daft Brush';
@@ -105,14 +105,26 @@ All colors MUST be HSL.
   }
 
   html, body, *, *::before, *::after {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
   }
   .font-daft {
     font-family: 'Daft Brush', sans-serif !important;
   }
   .font-body {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Nunito', sans-serif !important;
   }
+  
+  /* Harmonized Nunito font size utilities */
+  .text-body-xs { font-size: 0.75rem; line-height: 1.2; letter-spacing: 0.025em; }
+  .text-body-sm { font-size: 0.875rem; line-height: 1.4; letter-spacing: 0.025em; }
+  .text-body-base { font-size: 1rem; line-height: 1.5; letter-spacing: 0.025em; }
+  .text-body-lg { font-size: 1.125rem; line-height: 1.6; letter-spacing: 0.025em; }
+  .text-body-xl { font-size: 1.25rem; line-height: 1.6; letter-spacing: 0.025em; }
+  .text-body-2xl { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0.025em; }
+  .text-body-3xl { font-size: 1.875rem; line-height: 1.4; letter-spacing: 0.025em; }
+  .text-body-4xl { font-size: 2.25rem; line-height: 1.3; letter-spacing: 0.025em; }
+  .text-body-5xl { font-size: 3rem; line-height: 1.2; letter-spacing: 0.025em; }
+  .text-body-6xl { font-size: 3.75rem; line-height: 1.1; letter-spacing: 0.025em; }
 }
 
 @layer base {
