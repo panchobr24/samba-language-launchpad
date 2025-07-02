@@ -25,7 +25,7 @@ const FooterSection = () => {
 
           <div className="mt-12 pt-8 border-t border-white/20 text-center text-gray-200">
             <p className="font-bold">&copy; 2025 You Can Productions. All rights reserved.</p>
-            <p className="mt-2 text-sm font-bold">Website developed by Daniel Oliveira</p>
+            <p className="mt-2 text-sm font-bold">Website developed by JPZank</p>
           </div>
         </div>
       </div>
