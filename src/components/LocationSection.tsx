@@ -29,7 +29,7 @@ const LocationSection = () => {
           <div className="mb-12">
             <div className="w-full h-96 md:h-[450px] rounded-xl overflow-hidden shadow-2xl border-4 border-brazilian-blue/20">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.618418759914!2d-123.11216022401271!3d49.275580771257815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717ccd697eef%3A0xcecefc1a96939530!2s750%20Pacific%20Blvd%2C%20Vancouver%2C%20BC%20V6B%205E7!5e1!3m2!1sen!2sca!4v1751164944867!5m2!1sen!2sca" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.4208476230824!2d-123.11046138500893!3d49.27531654126338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717cd747aba9%3A0xf88d02f39aa064c7!2sPlaza%20of%20Nations!5e1!3m2!1sen!2sca!4v1751502232137!5m2!1sen!2sca" 
                 width="100%" 
                 height="100%" 
                 style={{border:0}} 
