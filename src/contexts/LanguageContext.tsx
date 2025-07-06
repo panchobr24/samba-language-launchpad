@@ -66,6 +66,8 @@ const translations = {
     'participate.vendor.desc': 'Apply to sell food, crafts, or promote your business.',
     'participate.volunteer': 'Volunteer',
     'participate.volunteer.desc': 'Join our team and experience the festival from behind the scenes.',
+    'participate.vendor.apply': 'Apply to be a vendor',
+    'participate.vendor.apply.desc': 'Join our marketplace and showcase your products to thousands of festival attendees!',
     'participate.contact': 'Interested? Get in Touch',
 
     // Location
@@ -77,6 +79,7 @@ const translations = {
     'location.parking.desc': 'Parking options available nearby.',
     
     // Footer
+    'footer.contact': 'Contact us by email',
     'footer.follow': 'Follow Us',
     'footer.instagram': 'Instagram'
   },
@@ -139,6 +142,7 @@ const translations = {
     'participate.vendor.desc': 'Candidate-se para vender comida, artesanato ou promover seu negócio.',
     'participate.volunteer': 'Seja Voluntário',
     'participate.volunteer.desc': 'Junte-se à nossa equipe e experimente o festival por trás das cenas.',
+    'participate.vendor.apply': 'Candidate-se para ser um vendedor',
     'participate.contact': 'Interessado? Entre em Contato',
     
     // Location
@@ -150,6 +154,7 @@ const translations = {
     'location.parking.desc': 'Opções de estacionamento disponíveis nas proximidades do evento.',
     
     // Footer
+    'footer.contact': 'Entre em contato conosco por e-mail',
     'footer.follow': 'Fique por dentro e nos siga no',
     'footer.instagram': 'Instagram'
   }
