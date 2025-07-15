@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/useLanguage';
 import { MapPin, Train, Car } from 'lucide-react';
 
 const LocationSection = () => {

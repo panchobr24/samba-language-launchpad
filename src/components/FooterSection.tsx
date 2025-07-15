@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/useLanguage';
 import { Instagram, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
@@ -12,31 +12,26 @@ const FooterSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           {/* WhatsApp Button */}
-          <a
-            href="https://wa.me/17788613392"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-green-400 via-brazilian-green to-brazilian-blue hover:from-green-500 hover:to-blue-800 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl border-2 border-white mb-4 mt-2"
-            style={{ minWidth: 320, justifyContent: 'center' }}
-          >
-            <MessageCircle className="w-6 h-6" />
-            Entre em Contato via WhatsApp
-          </a>
-
-          {/* Email label */}
-          <div className="text-white text-lg font-bold mb-2 mt-2">
-            Ou entre em contato conosco por e-mail
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <a
+              href="https://wa.me/17788613392"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-400 via-brazilian-green to-brazilian-blue hover:from-green-500 hover:to-blue-800 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl border-2 border-white"
+              style={{ minWidth: 240, justifyContent: 'center' }}
+            >
+              <MessageCircle className="w-6 h-6" />
+              {t('footer.whatsapp_button')}
+            </a>
+            <a
+              href="mailto:contact@youcanproductions.ca"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl border-2 border-white"
+              style={{ minWidth: 240, justifyContent: 'center' }}
+            >
+              <Mail className="w-6 h-6" />
+              {t('footer.email_button')}
+            </a>
           </div>
-
-          {/* Email Button */}
-          <a
-            href="mailto:contact@youcanproductions.ca"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl border-2 border-white mb-8"
-            style={{ minWidth: 320, justifyContent: 'center' }}
-          >
-            <Mail className="w-6 h-6" />
-            contact@youcanproductions.ca
-          </a>
 
           {/* Instagram Button */}
           <h2 className="text-3xl font-bold mb-8 drop-shadow-md mt-8">

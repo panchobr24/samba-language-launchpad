@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/useLanguage';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Clock, Music, Utensils, Users, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -256,16 +256,23 @@ const ScheduleSection = () => {
             ease: "easeOut"
           }}
         >
-          <motion.div 
-            className="bg-gradient-to-r from-brazilian-green to-brazilian-blue text-white px-8 py-4 rounded-full font-bold text-body-lg inline-block shadow-xl border-2 border-white font-body"
-            whileHover={{ 
-              scale: 1.05,
-              y: -2,
-              transition: { duration: 0.2 }
-            }}
+          <a
+            href="https://picpass.ca/Eventos/BrazilianDay/178?fbclid=PAZXh0bgNhZW0CMTEAAafhS9KDqIMkFqYnCj1d3XuWoAiaVyq0OES3YUAewri0eAjsZGmS8xNfI2zzTQ_aem_Ks1LueTEuq7kyOiMkf4o1Q"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'inline-block' }}
           >
-            {t('schedule.tickets')}
-          </motion.div>
+            <motion.div 
+              className="bg-gradient-to-r from-brazilian-green to-brazilian-blue text-white px-8 py-4 rounded-full font-bold text-body-lg inline-block shadow-xl border-2 border-white font-body"
+              whileHover={{ 
+                scale: 1.05,
+                y: -2,
+                transition: { duration: 0.2 }
+              }}
+            >
+              {t('schedule.tickets')}
+            </motion.div>
+          </a>
         </motion.div>
       </div>
     </section>

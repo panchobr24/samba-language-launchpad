@@ -1,12 +1,13 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { LanguageContext } from './LanguageContextObject';
 
 type Language = 'en' | 'pt';
 
-interface LanguageContextType {
+export type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
-}
+};
 
 const translations = {
   en: {
@@ -28,7 +29,7 @@ const translations = {
     'highlights.tchan': 'Special Guest "É O TCHAN!"',
     'highlights.tchan.desc': 'Friday, August 29, LIVE performance by Brazil\'s iconic "axé" group É o Tchan!',
     'highlights.food': 'Brazilian Food & Drinks',
-    'highlights.food.desc': 'Savor authentic Brazilian cuisine from "feijoada" and "pão de queijo" to "caipirinhas" and "brigadeiros".',
+    'highlights.food.desc': 'Savor authentic Brazilian cuisine from "feijoada" and "pão de queijo" to "cachorro quente" and "brigadeiros".',
     'highlights.culture': 'Cultural Experiences',
     'highlights.culture.desc': 'Enjoy immersive areas showcasing Brazilian art, fashion, games, and regional traditions.',
     'highlights.family': 'Family-Friendly Activities',
@@ -52,6 +53,8 @@ const translations = {
     'schedule.saturday.time': '10 AM to 10 PM',
     'schedule.saturday.music': 'Music & Dance All Day',
     'schedule.saturday.music.desc': 'Live performances by local bands and dance groups throughout the day.',
+    'schedule.saturday.vibe': 'Outdoor Vibes',
+    'schedule.saturday.vibe.desc': 'Enjoy the festival in an open-air space by the waterfront, with views of downtown Vancouver.',
     'schedule.saturday.pavilions': 'Cultural immersion',
     'schedule.saturday.pavilions.desc': 'Explore Brazilian culture with immersive experiences, workshops, and attractions.',
     'schedule.saturday.kids': 'Kids\' Activities, Food, Marketplace & More!',
@@ -80,8 +83,11 @@ const translations = {
     
     // Footer
     'footer.contact': 'Contact us by email',
+    'footer.whatsapp': 'Contact us via WhatsApp',
     'footer.follow': 'Follow Us',
-    'footer.instagram': 'Instagram'
+    'footer.instagram': 'Instagram',
+    'footer.whatsapp_button': 'Contact us by WhatsApp',
+    'footer.email_button': 'Contact us by e-mail'
   },
   pt: {
     // Header
@@ -102,7 +108,7 @@ const translations = {
     'highlights.tchan': 'Atracao Especial "É O TCHAN!"',
     'highlights.tchan.desc': 'Sexta feira, 29 de Agosto, Apresentacao AO VIVO do iconico grupo de "axe" brasileiro "É o Tchan!" Prepare se para dancar a noite toda com sucessos inesqueciveis e energia eletrizante.',
     'highlights.food': 'Comida e Bebidas Brasileiras',
-    'highlights.food.desc': 'Saboreie a autentica culinaria brasileira desde "feijoada" e "pao de queijo" ate "caipirinhas" e "brigadeiros".',
+    'highlights.food.desc': 'Saboreie a autêntica culinária brasileira desde "feijoada" e "pão de queijo" até "cachorro quente" e "brigadeiro".',
     'highlights.culture': 'Experiências Culturais',
     'highlights.culture.desc': 'Aproveite áreas imersivas que mostram arte brasileira, moda, jogos e tradições regionais.',
     'highlights.family': 'Atividades para Toda a Família',
@@ -155,15 +161,16 @@ const translations = {
     
     // Footer
     'footer.contact': 'Entre em contato conosco por e-mail',
+    'footer.whatsapp': 'Entre em Contato via WhatsApp',
     'footer.follow': 'Fique por dentro e nos siga no',
-    'footer.instagram': 'Instagram'
+    'footer.instagram': 'Instagram',
+    'footer.whatsapp_button': 'Fale conosco pelo WhatsApp',
+    'footer.email_button': 'Fale conosco por e-mail'
   }
 };
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
-
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt');
+  const [language, setLanguage] = useState<Language>('en');
 
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations[typeof language]] || key;
@@ -174,12 +181,4 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
       {children}
     </LanguageContext.Provider>
   );
-};
-
-export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
 };
