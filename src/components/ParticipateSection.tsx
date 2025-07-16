@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Handshake, Store, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../hooks/use-scroll-animation';
+import { trackCtaClick } from '@/lib/utils';
 
 const ParticipateSection = () => {
   const { t } = useLanguage();
@@ -99,6 +100,7 @@ const ParticipateSection = () => {
                         <a 
                           href="mailto:contact@youcanproductions.ca?subject=Candidatura de Vendedor - Brazilian Day Vancouver 2025&body=Olá,%0D%0A%0D%0AGostaria de me candidatar para ser vendedor no Brazilian Day Vancouver 2025.%0D%0A%0D%0APor favor, forneça as seguintes informações:%0D%0A- Nome da empresa:%0D%0A- Tipo de produtos/serviços:%0D%0A- Informações de contato:%0D%0A- Requisitos especiais:%0D%0A%0D%0AObrigado!"
                           className="inline-flex items-center justify-center px-4 py-2 bg-brazilian-green hover:bg-brazilian-green/80 text-white text-sm font-bold rounded-full transition-all duration-200 hover:scale-105 shadow-md"
+                          onClick={() => trackCtaClick('participate-vendor')}
                         >
                           {t('participate.vendor.apply')}
                         </a>
@@ -111,6 +113,7 @@ const ParticipateSection = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center justify-center px-4 py-2 bg-brazilian-blue hover:bg-brazilian-blue/80 text-white text-sm font-bold rounded-full transition-all duration-200 hover:scale-105 shadow-md"
+                          onClick={() => trackCtaClick('participate-volunteer')}
                         >
                           {t('participate.volunteer.apply')}
                         </a>

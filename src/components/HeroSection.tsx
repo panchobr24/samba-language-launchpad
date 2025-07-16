@@ -3,6 +3,7 @@ import { useLanguage } from '../contexts/useLanguage';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { trackCtaClick } from '@/lib/utils';
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -159,6 +160,7 @@ const HeroSection = () => {
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto mx-auto bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-brazilian-blue font-bold text-body-xl sm:text-lg text-2xl px-4 sm:px-8 py-4 sm:py-4 min-h-[44px] rounded-full shadow-2xl border-2 border-white font-body relative overflow-hidden"
+                onClick={() => trackCtaClick('hero-ingresso')}
               >
                 <span className="relative z-10 font-bold font-body uppercase tracking-wide text-white sm:text-lg text-2xl drop-shadow-md">{t('header.cta')}</span>
               </Button>
