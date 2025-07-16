@@ -73,6 +73,7 @@ const translations = {
     'participate.vendor.apply.desc': 'Join our marketplace and showcase your products to thousands of festival attendees!',
     'participate.contact': 'Interested? Get in Touch',
     'participate.volunteer.apply': 'Become a Volunteer',
+    'participate.sponsor.apply': 'Become a Sponsor',
 
     // Location
     'location.title': 'Location & Getting There',
@@ -155,6 +156,7 @@ const translations = {
     'participate.vendor.apply': 'Candidate-se para ser um vendedor',
     'participate.contact': 'Interessado? Entre em Contato',
     'participate.volunteer.apply': 'Quero ser voluntário(a)',
+    'participate.sponsor.apply': 'Quero ser patrocinador(a)',
     
     // Location
     'location.title': 'Localização e Como Chegar',

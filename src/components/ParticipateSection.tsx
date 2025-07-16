@@ -95,12 +95,25 @@ const ParticipateSection = () => {
                     <p className="text-gray-700 font-body text-body-base mb-4">
                       {opportunity.desc}
                     </p>
+                    {opportunity.title === t('participate.sponsor') && (
+                      <div className="mt-4">
+                        <a
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSdZCUG6rhdtQ0F5K_em7rG8xrYTSk8X1BkZoOCE6GdYUWqf_A/viewform?usp=header"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-4 py-2 bg-brazilian-yellow hover:bg-yellow-400 text-brazilian-blue text-sm font-bold rounded-full transition-all duration-200 hover:scale-105 shadow-md"
+                        >
+                          {t('participate.sponsor.apply')}
+                        </a>
+                      </div>
+                    )}
                     {opportunity.title === t('participate.vendor') && (
                       <div className="mt-4">
-                        <a 
-                          href="mailto:contact@youcanproductions.ca?subject=Candidatura de Vendedor - Brazilian Day Vancouver 2025&body=Olá,%0D%0A%0D%0AGostaria de me candidatar para ser vendedor no Brazilian Day Vancouver 2025.%0D%0A%0D%0APor favor, forneça as seguintes informações:%0D%0A- Nome da empresa:%0D%0A- Tipo de produtos/serviços:%0D%0A- Informações de contato:%0D%0A- Requisitos especiais:%0D%0A%0D%0AObrigado!"
-                          className="inline-flex items-center justify-center px-4 py-2 bg-brazilian-green hover:bg-brazilian-green/80 text-white text-sm font-bold rounded-full transition-all duration-200 hover:scale-105 shadow-md"
-                          onClick={() => trackCtaClick('participate-vendor')}
+                        <a
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSc_3L5d0BiI_DGGSlznJ0Mo9n6AZ82yg-n3bcipUsqinvC2Dg/viewform?usp=header"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-4 py-2 bg-brazilian-green hover:bg-green-700 text-white text-sm font-bold rounded-full transition-all duration-200 hover:scale-105 shadow-md"
                         >
                           {t('participate.vendor.apply')}
                         </a>
