@@ -72,6 +72,7 @@ const translations = {
     'participate.vendor.apply': 'Apply to be a vendor',
     'participate.vendor.apply.desc': 'Join our marketplace and showcase your products to thousands of festival attendees!',
     'participate.contact': 'Interested? Get in Touch',
+    'participate.volunteer.apply': 'Become a Volunteer',
 
     // Location
     'location.title': 'Location & Getting There',
@@ -87,7 +88,10 @@ const translations = {
     'footer.follow': 'Follow Us',
     'footer.instagram': 'Instagram',
     'footer.whatsapp_button': 'Contact us by WhatsApp',
-    'footer.email_button': 'Contact us by e-mail'
+    'footer.email_button': 'Contact us by e-mail',
+    'footer.press': 'Press & Media Contact',
+    'footer.press_button': 'Press & Media Contact',
+    'footer.contact_section': 'Contact'
   },
   pt: {
     // Header
@@ -150,6 +154,7 @@ const translations = {
     'participate.volunteer.desc': 'Junte-se à nossa equipe e experimente o festival por trás das cenas.',
     'participate.vendor.apply': 'Candidate-se para ser um vendedor',
     'participate.contact': 'Interessado? Entre em Contato',
+    'participate.volunteer.apply': 'Quero ser voluntário(a)',
     
     // Location
     'location.title': 'Localização e Como Chegar',
@@ -165,7 +170,10 @@ const translations = {
     'footer.follow': 'Fique por dentro e nos siga no',
     'footer.instagram': 'Instagram',
     'footer.whatsapp_button': 'Fale conosco pelo WhatsApp',
-    'footer.email_button': 'Fale conosco por e-mail'
+    'footer.email_button': 'Fale conosco por e-mail',
+    'footer.press': 'Imprensa & Mídia',
+    'footer.press_button': 'Contato para Imprensa & Mídia',
+    'footer.contact_section': 'Contato'
   }
 };
 

@@ -104,6 +104,18 @@ const ParticipateSection = () => {
                         </a>
                       </div>
                     )}
+                    {opportunity.title === t('participate.volunteer') && (
+                      <div className="mt-4">
+                        <a
+                          href="https://docs.google.com/forms/d/e/1FAIpQLScLPhH-Cc6UM-v2Q7BxJIfAuDJ3Obq-1PyUsWps2nUvdIyTjQ/viewform?usp=dialog"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-4 py-2 bg-brazilian-blue hover:bg-brazilian-blue/80 text-white text-sm font-bold rounded-full transition-all duration-200 hover:scale-105 shadow-md"
+                        >
+                          {t('participate.volunteer.apply')}
+                        </a>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>
