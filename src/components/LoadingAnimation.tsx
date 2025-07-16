@@ -23,7 +23,7 @@ const LoadingAnimation = () => {
           className="mb-8"
         >
           <img 
-            src="/lovable-uploads/78594582-c731-46b2-a322-8d85310ce381.png" 
+            src="/lovable-uploads/logo_29_30.png" 
             alt="Brazilian Day Vancouver 2025 Logo" 
             className="w-32 h-32 md:w-40 md:h-40 mx-auto drop-shadow-lg"
           />
