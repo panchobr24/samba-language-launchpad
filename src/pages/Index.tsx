@@ -6,6 +6,7 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ScheduleSection from '../components/ScheduleSection';
 import HighlightsSection from '../components/HighlightsSection';
+import MockupSection from '../components/MockupSection';
 import ParticipateSection from '../components/ParticipateSection';
 import LocationSection from '../components/LocationSection';
 import FooterSection from '../components/FooterSection';
@@ -41,6 +42,7 @@ const Index = () => {
             <AboutSection />
             <ScheduleSection />
             <HighlightsSection />
+            <MockupSection />
             <ParticipateSection />
             <LocationSection />
             <FooterSection />
