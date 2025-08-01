@@ -93,7 +93,7 @@ const HighlightsSection = () => {
         </motion.div>
 
         <motion.div 
-          className="grid grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -103,7 +103,7 @@ const HighlightsSection = () => {
             return (
               <motion.div 
                 key={index}
-                className="text-center p-8 sm:p-6 rounded-2xl bg-white shadow-lg border-2 border-gray-100 relative overflow-hidden group"
+                className="text-center p-4 md:p-6 lg:p-8 rounded-2xl bg-white shadow-lg border-2 border-gray-100 relative overflow-hidden group"
                 variants={cardVariants}
                 whileHover={{ 
                   y: -10,
@@ -120,18 +120,18 @@ const HighlightsSection = () => {
                 />
                 
                 <motion.div 
-                  className={`w-16 h-16 mx-auto mb-6 rounded-full ${highlight.color} flex items-center justify-center relative z-10`}
+                  className={`w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 rounded-full ${highlight.color} flex items-center justify-center relative z-10`}
                   whileHover={{ 
                     scale: 1.1,
                     rotate: 5,
                     transition: { duration: 0.3 }
                   }}
                 >
-                  <Icon className="w-8 h-8 text-white" />
+                  <Icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </motion.div>
                 
                 <motion.h3 
-                  className="text-xl font-bold text-brazilian-blue mb-4 font-daft relative z-10"
+                  className="text-base md:text-lg lg:text-xl font-bold text-brazilian-blue mb-2 md:mb-3 lg:mb-4 font-daft relative z-10"
                   whileHover={{ 
                     scale: 1.05,
                     transition: { duration: 0.2 }
@@ -140,7 +140,7 @@ const HighlightsSection = () => {
                   {highlight.title}
                 </motion.h3>
                 
-                <p className="text-gray-700 leading-relaxed font-body text-body-base relative z-10">
+                <p className="text-gray-700 leading-relaxed font-body text-xs md:text-sm lg:text-base relative z-10">
                   {highlight.desc}
                 </p>
               </motion.div>
