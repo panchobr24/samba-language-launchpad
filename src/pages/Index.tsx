@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import LanguageToggle from '../components/LanguageToggle';
 import HeroSection from '../components/HeroSection';
+import CampaignBanner from '../components/CampaignBanner';
 import AboutSection from '../components/AboutSection';
 import ScheduleSection from '../components/ScheduleSection';
 import HighlightsSection from '../components/HighlightsSection';
@@ -39,6 +40,7 @@ const Index = () => {
           >
             <LanguageToggle />
             <HeroSection />
+            <CampaignBanner />
             <AboutSection />
             <ScheduleSection />
             <HighlightsSection />

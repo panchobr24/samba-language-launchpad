@@ -37,6 +37,12 @@ const translations = {
     'highlights.marketplace': 'Marketplace & Experiences',
     'highlights.marketplace.desc': 'Explore local vendors and Brazilian brands with handmade goods, music, clothing, and more.',
     
+    // Campaign
+    'campaign.title': 'BC Place Goes Green, Blue and Yellow',
+    'campaign.subtitle': 'August 29–30 • Opening tribute for Brazilian Day Vancouver 2025',
+    'campaign.body': 'On Friday night, August 29, Vancouver\'s most iconic stadium will be illuminated in Brazil\'s colors to celebrate the opening of Brazilian Day Vancouver 2025. The lighting honors the strength and pride of the Brazilian community across Greater Vancouver and invites everyone to join this unforgettable celebration!',
+    'campaign.note': 'Lighting scheduled for the evening of Aug 29 into the early hours of Aug 30.',
+    
     // Schedule
     'schedule.title': 'Event Schedule',
     'schedule.friday': 'Friday, August 29',
@@ -120,6 +126,12 @@ const translations = {
     'highlights.family.desc': 'Área kids, pintura facial, jogos e artesanato tornam este um dia perfeito para toda a família.',
     'highlights.marketplace': 'Mercado & Experiências',
     'highlights.marketplace.desc': 'Explore vendedores locais e marcas brasileiras com produtos artesanais, música, roupas e muito mais.',
+    
+    // Campaign
+    'campaign.title': 'BC Place nas cores Verde, Azul e Amarelo',
+    'campaign.subtitle': '29–30 de agosto • Tributo de abertura do Brazilian Day 2025',
+    'campaign.body': 'Na noite de sexta-feira, 29 de agosto, o estádio mais icônico de Vancouver será iluminado nas cores do Brasil para celebrar a abertura do Brazilian Day Vancouver 2025. A ação homenageia a força e o orgulho da comunidade brasileira na Grande Vancouver e convida todos a participarem desta celebração inesquecível!',
+    'campaign.note': 'Iluminação prevista para a noite de 29 até a madrugada do dia 30.',
     
     // Schedule
     'schedule.title': 'Programação do Evento',
