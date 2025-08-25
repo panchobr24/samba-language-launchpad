@@ -3,11 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import LanguageToggle from '../components/LanguageToggle';
 import HeroSection from '../components/HeroSection';
-import CampaignBanner from '../components/CampaignBanner';
+
 import AboutSection from '../components/AboutSection';
 import ScheduleSection from '../components/ScheduleSection';
-import HighlightsSection from '../components/HighlightsSection';
+import BandLineupSection from '../components/BandLineupSection';
+
+import VendorMarketplaceSection from '../components/VendorMarketplaceSection';
 import MockupSection from '../components/MockupSection';
+import AfterPartySection from '../components/AfterPartySection';
 import ParticipateSection from '../components/ParticipateSection';
 import LocationSection from '../components/LocationSection';
 import FooterSection from '../components/FooterSection';
@@ -40,11 +43,12 @@ const Index = () => {
           >
             <LanguageToggle />
             <HeroSection />
-            <CampaignBanner />
             <AboutSection />
             <ScheduleSection />
-            <HighlightsSection />
+            <BandLineupSection />
+            <VendorMarketplaceSection />
             <MockupSection />
+            <AfterPartySection />
             <ParticipateSection />
             <LocationSection />
             <FooterSection />

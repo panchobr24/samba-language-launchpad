@@ -164,7 +164,9 @@ const MockupSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 * index }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg p-4 md:p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+                className={`bg-white rounded-lg p-4 md:p-6 shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300 ${
+                  location.name === "Main Stage" ? "col-span-2 lg:col-span-3" : ""
+                }`}
               >
                 <h4 className="text-base md:text-lg font-bold text-brazilian-blue mb-2 md:mb-3 font-daft">
                   {location.name}

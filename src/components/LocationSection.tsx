@@ -1,20 +1,79 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/useLanguage';
 import { MapPin, Train, Car } from 'lucide-react';
+import { Card } from './ui/card';
+import { Badge } from './ui/badge';
 
 const LocationSection = () => {
   const { t } = useLanguage();
 
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.6 }
+  };
+
   return (
     <section className="py-20 bg-white font-daft">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          {...fadeInUp}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-brazilian-blue mb-4 drop-shadow-md font-daft">
             {t('location.title')}
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        {/* BC Place Tribute */}
+        <motion.div 
+          className="max-w-4xl mx-auto mb-16"
+          {...fadeInUp}
+        >
+          <div className="rounded-2xl shadow-2xl border-4 border-white overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              {/* Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src="/lovable-uploads/BCPlace.jpg"
+                  alt="BC Place illuminated in Brazilian colors"
+                  className="w-full h-[320px] sm:h-[420px] lg:h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Text panel */}
+              <div className="bg-white p-6 sm:p-8 lg:p-10 flex items-center">
+                <div className="w-full">
+                  <div className="flex justify-center">
+                    <div className="h-2 w-24 bg-gradient-to-r from-brazilian-green via-brazilian-blue to-brazilian-yellow rounded-full mb-4" />
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-brazilian-blue mb-3 text-center font-daft">
+                    {t('bcplace.title')}
+                  </h3>
+                  <p className="text-base sm:text-lg font-bold text-brazilian-blue/90 mb-4 text-center">
+                    {t('bcplace.subtitle')}
+                  </p>
+                  <p className="font-body text-sm sm:text-base leading-relaxed text-gray-700 text-center mb-4">
+                    {t('bcplace.description')}
+                  </p>
+                  <div className="text-center">
+                    <span className="inline-block bg-brazilian-green/90 text-white text-xs px-3 py-1.5 rounded-full font-medium shadow-sm">
+                      {t('bcplace.schedule')}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          {...fadeInUp}
+        >
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-6">
               <MapPin className="w-8 h-8 text-red-500" />
@@ -63,7 +122,7 @@ const LocationSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

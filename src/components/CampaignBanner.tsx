@@ -72,11 +72,11 @@ const CampaignBanner = () => {
                   {t('campaign.body')}
                 </motion.p>
                 <motion.p
-                  className="font-body text-xs sm:text-sm mt-3 text-gray-600 italic text-justify"
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  className="font-body text-xs mt-3 text-gray-500 italic text-center"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.45, ease: 'easeOut', delay: 0.24 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
                 >
                   {t('campaign.note')}
                 </motion.p>

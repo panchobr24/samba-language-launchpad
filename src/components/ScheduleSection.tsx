@@ -52,12 +52,12 @@ const ScheduleSection = () => {
               />
               
               <CardHeader className="text-center relative z-10">
+                <div className="text-4xl md:text-5xl font-bold text-brazilian-yellow mb-2 font-daft">
+                  $75
+                </div>
                 <CardTitle className="text-2xl md:text-3xl font-bold mb-2 font-daft">
                   {t('schedule.friday')}
                 </CardTitle>
-                {t('schedule.friday.desc') && t('schedule.friday.desc') !== 'schedule.friday.desc' && (
-                  <p className="font-body font-normal italic text-white/80 text-base mt-2 mb-2 text-center max-w-xl mx-auto">{t('schedule.friday.desc')}</p>
-                )}
                 <motion.div 
                   className="flex items-center justify-center gap-2 text-brazilian-yellow"
                   initial={{ x: -20, opacity: 0 }}
@@ -84,9 +84,6 @@ const ScheduleSection = () => {
                   <Music className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.friday.dj')}</span>
-                    {t('schedule.friday.dj.desc') !== 'schedule.friday.dj.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.friday.dj.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
                 <motion.div 
@@ -99,9 +96,6 @@ const ScheduleSection = () => {
                   <Utensils className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.friday.food')}</span>
-                    {t('schedule.friday.food.desc') !== 'schedule.friday.food.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.friday.food.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
                 <motion.div 
@@ -114,9 +108,6 @@ const ScheduleSection = () => {
                   <Users className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.friday.vibes')}</span>
-                    {t('schedule.friday.vibes.desc') !== 'schedule.friday.vibes.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.friday.vibes.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
                 <motion.div 
@@ -128,10 +119,9 @@ const ScheduleSection = () => {
                 >
                   <Star className="inline-block w-6 h-6 mr-2 align-middle text-brazilian-blue" />
                   {t('schedule.friday.show')}
-                  {t('schedule.friday.show.desc') !== 'schedule.friday.show.desc' && (
-                    <span className="block font-body font-normal italic text-gray-700/80 text-base mt-1">{t('schedule.friday.show.desc')}</span>
-                  )}
                 </motion.div>
+                
+
               </CardContent>
             </Card>
           </motion.div>
@@ -161,6 +151,9 @@ const ScheduleSection = () => {
               />
               
               <CardHeader className="text-center relative z-10">
+                <div className="text-4xl md:text-5xl font-bold text-brazilian-yellow mb-2 font-daft">
+                  $15
+                </div>
                 <CardTitle className="text-2xl md:text-3xl font-bold mb-2 font-daft">
                   {t('schedule.saturday')}
                 </CardTitle>
@@ -178,7 +171,7 @@ const ScheduleSection = () => {
               </CardHeader>
               <CardContent className="space-y-4 relative z-10">
                 <div className="flex justify-center mb-2">
-                  <img src="/lovable-uploads/dia_30.png" alt="Dia 30 Highlight" className="h-40 w-40 md:h-56 md:w-56 rounded-full shadow-lg object-cover bg-white/80 p-1 border-2 border-white" />
+                  <img src="/lovable-uploads/c49a64fc-7d59-4e7b-a7cd-3b7589a58a26.png" alt="Dia 30 Highlight" className="h-40 w-40 md:h-56 md:w-56 rounded-full shadow-lg object-cover bg-white/80 p-1 border-2 border-white" />
                 </div>
                 <motion.div 
                   className="flex items-center gap-3 p-3 sm:p-2 bg-white/30 rounded-lg min-h-[44px]"
@@ -190,9 +183,6 @@ const ScheduleSection = () => {
                   <Music className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.saturday.music')}</span>
-                    {t('schedule.saturday.music.desc') !== 'schedule.saturday.music.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.saturday.music.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
                 <motion.div 
@@ -205,9 +195,6 @@ const ScheduleSection = () => {
                   <Music className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.saturday.vibe')}</span>
-                    {t('schedule.saturday.vibe.desc') !== 'schedule.saturday.vibe.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.saturday.vibe.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
                 <motion.div 
@@ -220,9 +207,6 @@ const ScheduleSection = () => {
                   <Users className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.saturday.pavilions')}</span>
-                    {t('schedule.saturday.pavilions.desc') !== 'schedule.saturday.pavilions.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.saturday.pavilions.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
                 <motion.div 
@@ -235,11 +219,10 @@ const ScheduleSection = () => {
                   <Utensils className="w-6 h-6 text-brazilian-yellow" />
                   <div className="flex flex-col text-left">
                     <span className="font-bold font-body text-lg text-white leading-tight">{t('schedule.saturday.kids')}</span>
-                    {t('schedule.saturday.kids.desc') !== 'schedule.saturday.kids.desc' && (
-                      <span className="font-body font-normal italic text-white/80 text-base mt-1">{t('schedule.saturday.kids.desc')}</span>
-                    )}
                   </div>
                 </motion.div>
+                
+
               </CardContent>
             </Card>
           </motion.div>
