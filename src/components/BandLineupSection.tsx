@@ -21,7 +21,7 @@ const saturdayBands = [
   { name: 'SAMBACOUVER', description: 'BRAZILIAN ROCK', instagram: 'https://www.instagram.com/sambacouver?igsh=NHV1Zmx4Znl4OHRs' },
   { name: 'CURUMIM', description: 'KIDS STAGE', instagram: 'https://www.instagram.com/oficina.curumim?igsh=aTN0eTJ0d2M0MXhh' },
   { name: 'TIAGO MARTINEZ', description: 'DJ', instagram: 'https://www.instagram.com/talktotiago?igsh=MXF0ZnVpOHIxOHQxcQ==' },
-  { name: 'BRAZILIAN DANCE', description: 'RHYTHMS CLASS', instagram: 'https://www.instagram.com/braziliandanceuk?igsh=M3AxeGh2NzVsajVq' },
+  { name: 'BRAZILIAN DANCE', description: 'RHYTHMS CLASS', instagram: 'https://www.instagram.com/mairadaiha?igsh=YnlwOHQwaTkzZ2x2' },
   { name: 'BATUCADA ABRACE', description: 'BRAZILIAN DRUMS CARNAVAL', instagram: 'https://www.instagram.com/batucadabrace?igsh=MTllYXpvc3B1NmVzMQ==' },
   { name: 'SAMBA FUSION', description: 'BRAZILIAN SAMBA', instagram: 'https://www.instagram.com/sambafusion?igsh=dWpkY2UxMzIya2R0' },
   { name: 'MYA', description: 'DRAG SHOW', instagram: 'https://www.instagram.com/oh_my_mya_?igsh=OXlkcGR4NHk4NHVn' },
