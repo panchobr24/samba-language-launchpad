@@ -162,7 +162,7 @@ const translations = {
     // Band Lineup
     'lineup.badge': 'Two-Day Musical Experience',
     'lineup.title': 'Band Lineup',
-    'lineup.subtitle': 'Experiência Musical Brasileira de Dois Dias',
+    'lineup.subtitle': 'Two-Day Brazilian Musical Experience',
     'lineup.friday.alt': 'Friday lineup featuring É o Tchan',
     'lineup.friday.badge': 'É o Tchan Live Show',
     'lineup.friday.live.title': 'Live DJs',
@@ -185,7 +185,16 @@ const translations = {
     'lineup.schedule.duration': 'Music from 12 PM to 10 PM',
     'lineup.styles.title': 'Music Styles',
     'lineup.styles.description': 'Experience a diverse range of Brazilian music genres performed by our talented local artists.',
-    'lineup.styles.genres': 'Samba, Forró, MPB, Bossa Nova, Pagode, Brazilian Rock'
+    'lineup.styles.genres': 'Samba, Forró, MPB, Bossa Nova, Pagode, Brazilian Rock',
+    'lineup.special.attraction': 'SPECIAL GUEST',
+    'lineup.schedule.button': 'View Full Schedule',
+    'lineup.schedule.hide': 'Hide Schedule',
+    'lineup.schedule.friday.button': 'Friday 29th Schedule',
+    'lineup.schedule.friday.hide': 'Hide Friday',
+    'lineup.schedule.saturday.button': 'Saturday 30th Schedule',
+    'lineup.schedule.saturday.hide': 'Hide Saturday',
+    'lineup.schedule.friday.title': 'Friday Schedule - August 29th',
+    'lineup.schedule.saturday.title': 'Saturday Schedule - August 30th'
   },
   pt: {
     // Header
@@ -361,7 +370,16 @@ const translations = {
     'lineup.schedule.duration': 'Música das 12h às 22h',
     'lineup.styles.title': 'Estilos Musicais',
     'lineup.styles.description': 'Experimente uma diversidade de gêneros musicais brasileiros interpretados pelos nossos talentosos artistas locais.',
-    'lineup.styles.genres': 'Samba, Forró, MPB, Bossa Nova, Pagode, Rock Brasileiro'
+    'lineup.styles.genres': 'Samba, Forró, MPB, Bossa Nova, Pagode, Rock Brasileiro',
+    'lineup.special.attraction': 'ATRAÇÃO ESPECIAL',
+    'lineup.schedule.button': 'Ver Cronograma Completo',
+    'lineup.schedule.hide': 'Ocultar Cronograma',
+    'lineup.schedule.friday.button': 'Cronograma Sexta 29',
+    'lineup.schedule.friday.hide': 'Ocultar Sexta',
+    'lineup.schedule.saturday.button': 'Cronograma Sábado 30',
+    'lineup.schedule.saturday.hide': 'Ocultar Sábado',
+    'lineup.schedule.friday.title': 'Cronograma da Sexta-feira - 29 de Agosto',
+    'lineup.schedule.saturday.title': 'Cronograma do Sábado - 30 de Agosto'
   }
 };
 
