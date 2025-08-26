@@ -14,7 +14,6 @@ const vendors = [
   { name: 'Rio HVAC', instagram: 'https://www.instagram.com/riohvac_?igsh=MTE4dmNlZ2FuamRhNg==', category: 'Services' },
   { name: 'Brazilliant Catering', instagram: 'https://www.instagram.com/brazilliant_catering?igsh=amF0djJrNHkyYjJs', category: 'Food' },
   { name: 'Olá Açaí', instagram: 'https://www.instagram.com/olacafeacai?igsh=MWJoZHVidXB3aGRzMw==', category: 'Food' },
-  { name: 'Oba Oba Brasil', instagram: 'https://www.instagram.com/obaobabrasilcanada?igsh=aDd1NWk5c3RveXV5', category: 'Food' },
   { name: 'E-Visa Immigration', instagram: 'https://www.instagram.com/evisaimmigration.brasil?igsh=MWEzdTFxb21oZ3pqNA==', category: 'Services' },
   { name: 'Metrotown Family Dentistry', instagram: 'https://www.instagram.com/metrotownfamilydentistry?igsh=NWxibjRteXlldDNh', category: 'Services' },
   { name: 'VSWI Canada', instagram: 'https://www.instagram.com/vswicanada?igsh=bDJ1cXQycnVhbXE0', category: 'Services' },
