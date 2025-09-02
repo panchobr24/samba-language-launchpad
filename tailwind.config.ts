@@ -20,7 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'daft': ['Daft Brush', 'cursive'],
-				'nunito': ['Nunito', 'sans-serif'],
+				'nunito': ['Nunito', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif'],
 			},
 			fontSize: {
 				// Harmonized font sizes for Nunito to work well with Daft Brush

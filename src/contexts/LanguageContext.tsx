@@ -194,7 +194,29 @@ const translations = {
     'lineup.schedule.saturday.button': 'Saturday 30th Schedule',
     'lineup.schedule.saturday.hide': 'Hide Saturday',
     'lineup.schedule.friday.title': 'Friday Schedule - August 29th',
-    'lineup.schedule.saturday.title': 'Saturday Schedule - August 30th'
+    'lineup.schedule.saturday.title': 'Saturday Schedule - August 30th',
+
+    // Thank You Page
+    'thankyou.title': 'Thank You!',
+    'thankyou.subtitle': 'Brazilian Day Vancouver 2025 was an incredible success!',
+    'thankyou.message': 'Thank you to everyone who made this celebration unforgettable. Your passion for Brazilian culture and community spirit made August 29-30, 2025 one of the most vibrant festivals Vancouver has ever seen!',
+    'thankyou.stats.attendees': 'Attendees',
+    'thankyou.stats.artists': 'Artists',
+    'thankyou.stats.vendors': 'Vendors',
+    'thankyou.stats.memories': 'Memories',
+    'thankyou.stats.attendees.count': '5,000+',
+    'thankyou.stats.artists.count': '15',
+    'thankyou.stats.vendors.count': '16',
+    'thankyou.stats.memories.count': '∞',
+    'thankyou.media.message': 'Coming soon: Photos and videos from the event will be available here on the website!',
+    'thankyou.follow': 'Follow for Updates',
+    'thankyou.location': 'Plaza of Nations, Vancouver',
+    'thankyou.date': 'August 29-30, 2025',
+    'thankyou.footer.title': 'See you next time!',
+    'thankyou.footer.message': 'Stay connected for updates and join us again for another unforgettable celebration!',
+    'thankyou.footer.copyright': '© 2025 Brazilian Day Vancouver. Made with 💚 for the community.',
+    'thankyou.footer.followwebdev': 'Website by JPZank',
+    'thankyou.logo.alt': 'Brazilian Day Vancouver 2025 Logo'
   },
   pt: {
     // Header
@@ -379,7 +401,29 @@ const translations = {
     'lineup.schedule.saturday.button': 'Cronograma Sábado 30',
     'lineup.schedule.saturday.hide': 'Ocultar Sábado',
     'lineup.schedule.friday.title': 'Cronograma da Sexta-feira - 29 de Agosto',
-    'lineup.schedule.saturday.title': 'Cronograma do Sábado - 30 de Agosto'
+    'lineup.schedule.saturday.title': 'Cronograma do Sábado - 30 de Agosto',
+
+    // Thank You Page
+    'thankyou.title': 'Obrigado!',
+    'thankyou.subtitle': 'Brazilian Day Vancouver 2025 foi um sucesso incrível!',
+    'thankyou.message': 'Obrigado a todos que tornaram esta celebração inesquecível. Sua paixão pela cultura brasileira e espírito comunitário fizeram dos dias 29 e 30 de agosto de 2025 um dos festivais mais marcantes que Vancouver já viu!',
+    'thankyou.stats.attendees': 'Participantes',
+    'thankyou.stats.artists': 'Artistas',
+    'thankyou.stats.vendors': 'Vendedores',
+    'thankyou.stats.memories': 'Memórias',
+    'thankyou.stats.attendees.count': '5,000+',
+    'thankyou.stats.artists.count': '15',
+    'thankyou.stats.vendors.count': '16',
+    'thankyou.stats.memories.count': '∞',
+    'thankyou.media.message': 'Em breve: Fotos e vídeos do evento estarão disponíveis aqui no site!',
+    'thankyou.follow': 'Siga para Atualizações',
+    'thankyou.location': 'Plaza of Nations, Vancouver',
+    'thankyou.date': '29 e 30 de Agosto de 2025',
+    'thankyou.footer.title': 'Até a Próxima!',
+    'thankyou.footer.message': 'Mantenha-se conectado para atualizações e junte-se a nós novamente para outra celebração inesquecível!',
+    'thankyou.footer.copyright': '© 2025 Brazilian Day Vancouver. Feito com 💚 para a comunidade.',
+    'thankyou.footer.followwebdev': 'Website por JPZank',
+    'thankyou.logo.alt': 'Logo Brazilian Day Vancouver 2025'
   }
 };
 
