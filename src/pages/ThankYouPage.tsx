@@ -4,7 +4,7 @@ import { LanguageProvider } from '../contexts/LanguageContext';
 import { useLanguage } from '../contexts/useLanguage';
 import LanguageToggle from '../components/LanguageToggle';
 import { Button } from '@/components/ui/button';
-import { Calendar, MapPin, Instagram, Heart, Music, Users, Store } from 'lucide-react';
+import { Calendar, MapPin, Instagram, Heart, Music, Users, Store, Mail } from 'lucide-react';
 
 const ThankYouPageContent = () => {
   const { t } = useLanguage();
@@ -129,9 +129,9 @@ const ThankYouPageContent = () => {
                 </div>
               </motion.div>
 
-              {/* CTA Button */}
+              {/* CTA Buttons */}
               <motion.div
-                className="mb-8"
+                className="mb-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
@@ -140,6 +140,7 @@ const ThankYouPageContent = () => {
                   ease: "easeOut"
                 }}
               >
+                {/* Follow Button */}
                 <motion.div
                   whileHover={{
                     scale: 1.05,
@@ -148,7 +149,7 @@ const ThankYouPageContent = () => {
                   }}
                   whileTap={{ scale: 0.95 }}
                 >
-                                    <a
+                  <a
                     href="https://www.instagram.com/youcanproductions?igsh=MWV6cjVmbXo4aHI0dg=="
                     target="_blank"
                     rel="noopener noreferrer"
@@ -156,11 +157,36 @@ const ThankYouPageContent = () => {
                   >
                     <Button
                       size="lg"
-                      className="w-full sm:w-auto mx-auto bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-body-xl px-8 py-4 min-h-[44px] rounded-full shadow-2xl border-2 border-white font-body"
+                      className="w-full sm:w-auto bg-gradient-to-r from-brazilian-green to-brazilian-blue hover:from-brazilian-green/80 hover:to-brazilian-blue/80 text-white font-bold text-body-xl px-8 py-4 min-h-[44px] rounded-full shadow-2xl border-2 border-white font-body"
                     >
                       <Instagram className="w-5 h-5 mr-2" />
                       <span className="font-bold font-body uppercase tracking-wide text-white text-lg drop-shadow-md">
                         {t('thankyou.follow')}
+                      </span>
+                    </Button>
+                  </a>
+                </motion.div>
+
+                {/* Contact Button */}
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    y: -3,
+                    transition: { duration: 0.2 }
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <a
+                    href="mailto:contact@youcanproductions.ca"
+                    className="inline-block"
+                  >
+                    <Button
+                      size="lg"
+                      className="w-full sm:w-auto bg-gradient-to-r from-brazilian-blue to-brazilian-green hover:from-brazilian-blue/80 hover:to-brazilian-green/80 text-white font-bold text-body-xl px-8 py-4 min-h-[44px] rounded-full shadow-2xl border-2 border-white font-body"
+                    >
+                      <Mail className="w-5 h-5 mr-2" />
+                      <span className="font-bold font-body uppercase tracking-wide text-white text-lg drop-shadow-md">
+                        {t('thankyou.contact')}
                       </span>
                     </Button>
                   </a>
